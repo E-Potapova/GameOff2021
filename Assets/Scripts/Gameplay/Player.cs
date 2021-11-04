@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
 
     public WooperController2d controller;
 
-    public float walkspeed = 200f;
+    public float walkspeed = ConfigurationUtils.PlayerSpeed;
 
     float horizontalMove = 0f;
 

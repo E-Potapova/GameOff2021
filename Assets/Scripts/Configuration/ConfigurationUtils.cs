@@ -11,7 +11,7 @@ public static class ConfigurationUtils
 
     #region Properties
 
-    public static float PaddleMoveUnitsPerSecond
+    public static float PlayerSpeed
     {
         get { return configurationData.PlayerSpeed; }
     }
