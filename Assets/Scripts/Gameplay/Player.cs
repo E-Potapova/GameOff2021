@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
 
     public WooperController2d controller;
 
-    public float walkspeed = ConfigurationUtils.PlayerSpeed;
+    public float walkspeed;
 
     float horizontalMove = 0f;
 
@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        walkspeed = ConfigurationUtils.PlayerSpeed;
     }
 
     // Update is called once per frame

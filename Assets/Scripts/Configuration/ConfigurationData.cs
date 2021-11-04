@@ -14,7 +14,7 @@ public class ConfigurationData
     const string ConfigurationDataFileName = "ConfigData.csv";
 
     // configuration data
-    float playerSpeed = 10;
+    float playerSpeed = 300;
 
     #endregion
 
