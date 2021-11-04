@@ -15,6 +15,8 @@ public class ConfigurationData
 
     // configuration data
     float playerSpeed = 300;
+    float jumpForce = 100;
+    float crouchSpeed = 150;
 
     #endregion
 
@@ -23,6 +25,16 @@ public class ConfigurationData
     public float PlayerSpeed
     {
         get { return playerSpeed; }
+    }
+
+    public float JumpForce
+    {
+        get { return jumpForce; }
+    }
+
+    public float CrouchSpeed
+    {
+        get { return crouchSpeed; }
     }
 
     #endregion

@@ -16,6 +16,16 @@ public static class ConfigurationUtils
         get { return configurationData.PlayerSpeed; }
     }
 
+    public static float JumpForce
+    {
+        get { return configurationData.JumpForce; }
+    }
+
+    public static float CrouchSpeed
+    {
+        get { return configurationData.CrouchSpeed; }
+    }
+
     #endregion
 
     /// <summary>
