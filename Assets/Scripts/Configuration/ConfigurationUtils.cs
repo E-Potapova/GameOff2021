@@ -26,6 +26,11 @@ public static class ConfigurationUtils
         get { return configurationData.CrouchSpeed; }
     }
 
+    public static float DashSpeed
+    {
+        get { return configurationData.DashSpeed; }
+    }
+
     #endregion
 
     /// <summary>

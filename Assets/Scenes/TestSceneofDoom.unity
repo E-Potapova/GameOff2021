@@ -135,7 +135,7 @@ GameObject:
   m_Layer: 0
   m_Name: GroundCheck
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -147,7 +147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 212597054}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.86, z: 0}
+  m_LocalPosition: {x: 0, y: -0.941, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2121596536}
@@ -477,8 +477,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1679842082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.7139, y: -1.6433, z: 0}
-  m_LocalScale: {x: 6.4722486, y: 7.5238066, z: 1}
+  m_LocalPosition: {x: 0, y: 1.84, z: 0}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -638,8 +638,7 @@ GameObject:
   - component: {fileID: 2121596535}
   - component: {fileID: 2121596537}
   - component: {fileID: 2121596538}
-  - component: {fileID: 2121596540}
-  - component: {fileID: 2121596539}
+  - component: {fileID: 2121596541}
   m_Layer: 0
   m_Name: Wooper
   m_TagString: Player
@@ -761,7 +760,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.9, y: 1.76}
   m_EdgeRadius: 0
---- !u!114 &2121596539
+--- !u!114 &2121596541
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -770,36 +769,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2121596534}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b53dc2dcae101944b20d00611ce03a5, type: 3}
+  m_Script: {fileID: 11500000, guid: 5901bd93185deb5408ffe8f201c1be5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 2121596540}
-  walkspeed: 40
---- !u!114 &2121596540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2121596534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2d02c4abba31714ebc6400d05c7ca27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_JumpForce: 400
-  m_CrouchSpeed: 0.2
-  m_MovementSmoothing: 0.05
-  m_AirControl: 1
-  m_WhatIsGround:
+  toes: {fileID: 212597055}
+  thisisGround:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_GroundCheck: {fileID: 212597055}
-  m_CeilingCheck: {fileID: 347363204}
-  m_CrouchDisableCollider: {fileID: 0}
-  OnLandEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  OnCrouchEvent:
-    m_PersistentCalls:
-      m_Calls: []

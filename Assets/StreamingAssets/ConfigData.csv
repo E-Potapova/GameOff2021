@@ -1,2 +1,2 @@
-PlayerSpeed
-300
+PlayerSpeed, JumpForce, CrouchSpeed, DashSpeed
+300, 8, 50, 300
