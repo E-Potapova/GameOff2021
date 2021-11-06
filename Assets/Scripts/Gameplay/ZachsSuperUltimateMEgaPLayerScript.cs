@@ -148,12 +148,13 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
 
         if (onGround && jump)
         {
-            playerrigidbody.velocity = (Vector2.up * jumpForce);
+
+            playerrigidbody.velocity = new Vector2 (playerrigidbody.velocity.x, jumpForce);
             //Jump(jump);
         }
         else if (!onGround && doubleJump && jumpReset)
         {
-            playerrigidbody.velocity = (Vector2.up * jumpForce);
+            playerrigidbody.velocity = new Vector2(playerrigidbody.velocity.x, jumpForce);
             //Jump(jump);
             jumpReset = false;
         }
