@@ -16,7 +16,8 @@ public class ConfigurationData
     // configuration data
     float playerSpeed = 300;
     float jumpForce = 100;
-    float crouchSpeed = 150;
+    float crouchSpeed = 10;
+    float dashSpeed = 10000;
 
     #endregion
 
@@ -35,6 +36,11 @@ public class ConfigurationData
     public float CrouchSpeed
     {
         get { return crouchSpeed; }
+    }
+
+    public float DashSpeed
+    {
+        get { return dashSpeed; }
     }
 
     #endregion
@@ -84,5 +90,9 @@ public class ConfigurationData
 
         //set fields
         playerSpeed = float.Parse(values[0]);
+        jumpForce = float.Parse(values[1]);
+        crouchSpeed = float.Parse(values[2]);
+        dashSpeed = float.Parse(values[3]);
+
     }
 }

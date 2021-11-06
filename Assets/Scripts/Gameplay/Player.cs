@@ -11,7 +11,6 @@ public class Player : MonoBehaviour
 
     float horizontalMove = 0f;
 
-
     bool jump = false;
 
     bool crouch = false;
