@@ -1,2 +1,2 @@
-PlayerSpeed, JumpForce, CrouchSpeed, DashSpeed
-300, 8, 50, 300
+PlayerSpeed, JumpForce, CrouchSpeed, DashSpeed, FallMulitplier, wallSlideSpeed, wallJumpX, wallJumpY, 
+300, 12, 50, 200, 2.5, 2.0, 20, 10

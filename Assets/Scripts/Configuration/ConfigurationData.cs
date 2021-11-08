@@ -18,6 +18,11 @@ public class ConfigurationData
     float jumpForce = 100;
     float crouchSpeed = 10;
     float dashSpeed = 10000;
+    float fallMultiplier = 2.5f;
+    float wallSlideSpeed = 1.5f;
+    float wallJumpX = 30;
+    float wallJumpY = 10;
+
 
     #endregion
 
@@ -41,6 +46,22 @@ public class ConfigurationData
     public float DashSpeed
     {
         get { return dashSpeed; }
+    }
+    public float FallMultiplier
+    {
+        get { return fallMultiplier; }
+    }
+    public float WallSlideSpeed
+    {
+        get { return wallSlideSpeed; }
+    }
+    public float WallJumpX
+    {
+        get { return wallJumpX; }
+    }
+    public float WallJumpY
+    {
+        get { return wallJumpY; }
     }
 
     #endregion
@@ -93,6 +114,10 @@ public class ConfigurationData
         jumpForce = float.Parse(values[1]);
         crouchSpeed = float.Parse(values[2]);
         dashSpeed = float.Parse(values[3]);
+        fallMultiplier = float.Parse(values[4]);
+        wallSlideSpeed = float.Parse(values[5]);
+        wallJumpX = float.Parse(values[6]);
+        wallJumpY = float.Parse(values[7]);
 
     }
 }

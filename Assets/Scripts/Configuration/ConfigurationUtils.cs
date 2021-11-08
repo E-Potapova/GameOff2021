@@ -31,6 +31,26 @@ public static class ConfigurationUtils
         get { return configurationData.DashSpeed; }
     }
 
+    public static float FallMultiplier
+    {
+        get { return configurationData.FallMultiplier; }
+    }
+
+    public static float WallSlideSpeed
+    {
+        get { return configurationData.WallSlideSpeed; }
+    }
+
+    public static float WallJumpX
+    {
+        get { return configurationData.WallJumpX; }
+    }
+
+    public static float WallJumpY
+    {
+        get { return configurationData.WallJumpY; }
+    }
+
     #endregion
 
     /// <summary>
