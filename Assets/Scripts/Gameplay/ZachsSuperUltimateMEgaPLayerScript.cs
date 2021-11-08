@@ -12,6 +12,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     private float dashSpeed;
     private float movementSmoothing = .05f;
     float horizontalMove = 0;
+    private float direction = 0;
 
     Vector3 actualMove;
     private bool facingRight = true; 
@@ -47,6 +48,19 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     private float checkRadius;
     public LayerMask thisisGround;
 
+    //variables for wall sliding
+    private bool onWall = false;
+    public Transform wallhands;
+    private bool wallSlide = false;
+    private float wallSlideSpeed = 2.0f;
+
+    //variables for wall jumping
+    private bool wallJump = false;
+    private float wallForcex = 30.0f;
+    private float wallForcey = 10.0f;
+    private float wallJumpTimer = 0.01f;
+
+
     //get the rigidbody
     private Rigidbody2D playerrigidbody;
 
@@ -78,7 +92,9 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * walkSpeed;
 
-        onGround = Physics2D.OverlapCircle(toes.position, checkRadius, thisisGround); 
+        onGround = Physics2D.OverlapCircle(toes.position, checkRadius, thisisGround);
+
+        onWall = Physics2D.OverlapCircle(wallhands.position, checkRadius, thisisGround);
 
 
         //check for key press
@@ -86,6 +102,10 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         {
             jump = true;
             doubleJump = true;
+            if (wallSlide)
+            {
+                wallJump = true;
+            }
         }
 /*
         if (Input.GetButtonUp("Jump"))
@@ -109,10 +129,14 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         {
             dash = true;
         }
-
-        if(playerrigidbody.velocity.y < 0 && !dash)
+        
+        if(onWall && !onGround)
         {
-            playerrigidbody.velocity += Vector2.up * Physics2D.gravity.y * (fallMulitplier - 1) * Time.deltaTime;
+            wallSlide = true;
+        }
+        else
+        {
+            wallSlide = false; 
         }
 
     }
@@ -123,6 +147,16 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         jump = false;
         doubleJump = false;
         dash = false;
+
+
+        if (wallSlide)
+        {
+            playerrigidbody.velocity = new Vector2(playerrigidbody.velocity.x, Mathf.Clamp(playerrigidbody.velocity.y, -wallSlideSpeed, float.MaxValue));
+        }
+        else if (playerrigidbody.velocity.y < 0)
+        {
+            playerrigidbody.velocity += Vector2.up * Physics2D.gravity.y * (fallMulitplier - 1) * Time.deltaTime;
+        }
     }
 
     public void Move(float move, bool crouch, bool jump, bool dash)
@@ -153,12 +187,12 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
             }
             dashReset = false;
             onGround = false;
-            actualMove = new Vector2(move, 0);
+
+            playerrigidbody.velocity = new Vector2(playerrigidbody.velocity.x, 2);
         }
-        else {
 
         //actually move the character along y axis
-        actualMove = new Vector2(move, playerrigidbody.velocity.y); }
+        actualMove = new Vector2(move, playerrigidbody.velocity.y); 
         //make movement smooth
         playerrigidbody.velocity = Vector3.SmoothDamp(playerrigidbody.velocity, actualMove, ref velocity, movementSmoothing);
 
@@ -171,6 +205,9 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
             Flip();
         }
 
+
+
+        //hey dumbo jumping stuff handled here
         if (onGround)
         {
             jumpReset = true;
@@ -179,35 +216,33 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
 
         if (onGround && jump)
         {
-
             playerrigidbody.velocity = new Vector2 (playerrigidbody.velocity.x, jumpForce);
-            //Jump(jump);
+        }
+        else if (wallJump)
+        {
+            playerrigidbody.velocity = new Vector2(wallForcex * -direction, wallForcey);
+            Invoke("SetWallJumpToFalse", wallJumpTimer);
         }
         else if (!onGround && doubleJump && jumpReset)
         {
             playerrigidbody.velocity = new Vector2(playerrigidbody.velocity.x, jumpForce);
-            //Jump(jump);
             jumpReset = false;
         }
 
     }
 
- /*   public void Jump(bool jump)
+    void SetWallJumpToFalse()
     {
-        jumpTimeCounter = jumpTime;
-        if (jumpTimeCounter > 0 && jump)
-        {
-            playerrigidbody.velocity = (Vector2.up * jumpForce);
-            jumpTimeCounter -= Time.deltaTime;
-        }
-
-    }*/
+        wallJump = false;
+        jumpReset = true;
+        dashReset = true;
+    }
 
     //function to flip character sprite
     public void Flip()
     {
         facingRight = !facingRight;
-
+         direction = Input.GetAxisRaw("Horizontal");
         //flip hit box
         Vector3 hitboxScale = transform.localScale;
         hitboxScale.x = (hitboxScale.x * -1);
