@@ -68,6 +68,9 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
 
     private Vector3 velocity = Vector3.zero;
 
+    // get animator
+    private Animator animator;
+
 
     // Start is called before the first frame update
     void Start()
@@ -83,6 +86,9 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         wallSlideSpeed = ConfigurationUtils.WallSlideSpeed;
         wallJumpX = ConfigurationUtils.WallJumpX;
         wallJumpY = ConfigurationUtils.WallJumpY;
+
+        // animation support
+        animator = GetComponent<Animator>();
 
     }
 
@@ -138,6 +144,14 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
             wallSlide = false;
         }
 
+        // update animations
+        if (horizontalMove != 0 && onGround)
+        {
+            animator.SetBool("isRunning", true);
+        }
+        else if (horizontalMove == 0 && onGround){
+            animator.SetBool("isRunning", false);
+        }
     }
 
     private void FixedUpdate()
