@@ -13,21 +13,30 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     private float movementSmoothing = .05f;
     float horizontalMove = 0;
 
-
-
+    Vector3 actualMove;
     private bool facingRight = true; 
 
     //check for key events
     private bool crouch = false;
     private bool dash = false;
 
+    //Gravity falling
+    private float fallMulitplier = 2.5f; 
+    //private float lowJump
+
     //Jump variables
     private bool jump = false;
     private bool doubleJump = false;
     private bool jumpReset = false;
 
-    private bool dashReset = false; 
+    //dash variables
+    private bool dashReset = false;
 
+    //crouch variables
+    private Vector2 standingColliderSize = new Vector2 (2.9f, 1.76f);
+    private Vector2 crouchingcolliderSize = new Vector2(1, .5f);
+
+    //variable jump height
     private float jumpTimeCounter;
     private float jumpTime = 0.55f;
     private bool isJumping = false; 
@@ -41,6 +50,9 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     //get the rigidbody
     private Rigidbody2D playerrigidbody;
 
+    //get the collider
+    private BoxCollider2D playerCollider;
+
     private Vector3 velocity = Vector3.zero;
 
 
@@ -48,6 +60,8 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     void Start()
     {
         playerrigidbody = GetComponent<Rigidbody2D>();
+
+        playerCollider = GetComponent<BoxCollider2D>();
 
         walkSpeed = ConfigurationUtils.PlayerSpeed;
 
@@ -83,10 +97,12 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         if (Input.GetButtonDown("Crouch"))
         {
             crouch = true;
+            
         }
         else if (Input.GetButtonUp("Crouch"))
         {
             crouch = false;
+            
         }
 
         if (Input.GetButtonDown("Dash"))
@@ -94,40 +110,55 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
             dash = true;
         }
 
+        if(playerrigidbody.velocity.y < 0 && !dash)
+        {
+            playerrigidbody.velocity += Vector2.up * Physics2D.gravity.y * (fallMulitplier - 1) * Time.deltaTime;
+        }
+
     }
 
     private void FixedUpdate()
     {
-        Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
+        Move(horizontalMove * Time.fixedDeltaTime, crouch, jump, dash);
         jump = false;
         doubleJump = false;
         dash = false;
     }
 
-    public void Move(float move, bool crouch, bool jump)
+    public void Move(float move, bool crouch, bool jump, bool dash)
     {
 
         //check for crouching
         //if crouching
         if (crouch)
         {
-            move = move*(crouchSpeed/100);
+            playerCollider.size = crouchingcolliderSize;
+            move = move * (crouchSpeed / 100);
+        }
+        else
+        {
+            playerCollider.size = standingColliderSize;
         }
 
         if (dash && dashReset)
         {
+
             if (facingRight) {
                 move = dashSpeed;
             }
 
             if (!facingRight)
             {
-                move = dashSpeed *-1;
+                move = dashSpeed * -1;
             }
-            dashReset = false; 
+            dashReset = false;
+            onGround = false;
+            actualMove = new Vector2(move, 0);
         }
+        else {
+
         //actually move the character along y axis
-        Vector3 actualMove = new Vector2(move, playerrigidbody.velocity.y);
+        actualMove = new Vector2(move, playerrigidbody.velocity.y); }
         //make movement smooth
         playerrigidbody.velocity = Vector3.SmoothDamp(playerrigidbody.velocity, actualMove, ref velocity, movementSmoothing);
 
