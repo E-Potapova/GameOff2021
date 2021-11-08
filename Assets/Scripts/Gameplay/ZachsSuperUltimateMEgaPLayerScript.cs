@@ -15,15 +15,14 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     private float direction = 0;
 
     Vector3 actualMove;
-    private bool facingRight = true; 
+    private bool facingRight = true;
 
     //check for key events
     private bool crouch = false;
     private bool dash = false;
 
     //Gravity falling
-    private float fallMulitplier = 2.5f; 
-    //private float lowJump
+    private float fallMultiplier;
 
     //Jump variables
     private bool jump = false;
@@ -34,13 +33,13 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     private bool dashReset = false;
 
     //crouch variables
-    private Vector2 standingColliderSize = new Vector2 (2.9f, 1.76f);
+    private Vector2 standingColliderSize = new Vector2(2.9f, 1.76f);
     private Vector2 crouchingcolliderSize = new Vector2(1, .5f);
 
     //variable jump height
     private float jumpTimeCounter;
     private float jumpTime = 0.55f;
-    private bool isJumping = false; 
+    private bool isJumping = false;
 
     //variables to check if are player is on the ground
     private bool onGround;
@@ -52,13 +51,13 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     private bool onWall = false;
     public Transform wallhands;
     private bool wallSlide = false;
-    private float wallSlideSpeed = 2.0f;
+    private float wallSlideSpeed;
 
     //variables for wall jumping
     private bool wallJump = false;
-    private float wallForcex = 30.0f;
-    private float wallForcey = 10.0f;
-    private float wallJumpTimer = 0.01f;
+    private float wallJumpX;
+    private float wallJumpY;
+    private float wallJumpTimer = 0.05f;
 
 
     //get the rigidbody
@@ -74,16 +73,16 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     void Start()
     {
         playerrigidbody = GetComponent<Rigidbody2D>();
-
         playerCollider = GetComponent<BoxCollider2D>();
 
         walkSpeed = ConfigurationUtils.PlayerSpeed;
-
         jumpForce = ConfigurationUtils.JumpForce;
-
         crouchSpeed = ConfigurationUtils.CrouchSpeed;
-
         dashSpeed = ConfigurationUtils.DashSpeed;
+        fallMultiplier = ConfigurationUtils.FallMultiplier;
+        wallSlideSpeed = ConfigurationUtils.WallSlideSpeed;
+        wallJumpX = ConfigurationUtils.WallJumpX;
+        wallJumpY = ConfigurationUtils.WallJumpY;
 
     }
 
@@ -107,36 +106,36 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
                 wallJump = true;
             }
         }
-/*
-        if (Input.GetButtonUp("Jump"))
-        {
-            jump = false;
-            //doubleJump = false;
-        }*/
+        /*
+                if (Input.GetButtonUp("Jump"))
+                {
+                    jump = false;
+                    //doubleJump = false;
+                }*/
 
         if (Input.GetButtonDown("Crouch"))
         {
             crouch = true;
-            
+
         }
         else if (Input.GetButtonUp("Crouch"))
         {
             crouch = false;
-            
+
         }
 
         if (Input.GetButtonDown("Dash"))
         {
             dash = true;
         }
-        
-        if(onWall && !onGround)
+
+        if (onWall && !onGround)
         {
             wallSlide = true;
         }
         else
         {
-            wallSlide = false; 
+            wallSlide = false;
         }
 
     }
@@ -155,7 +154,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         }
         else if (playerrigidbody.velocity.y < 0)
         {
-            playerrigidbody.velocity += Vector2.up * Physics2D.gravity.y * (fallMulitplier - 1) * Time.deltaTime;
+            playerrigidbody.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         }
     }
 
@@ -177,7 +176,8 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         if (dash && dashReset)
         {
 
-            if (facingRight) {
+            if (facingRight)
+            {
                 move = dashSpeed;
             }
 
@@ -192,7 +192,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         }
 
         //actually move the character along y axis
-        actualMove = new Vector2(move, playerrigidbody.velocity.y); 
+        actualMove = new Vector2(move, playerrigidbody.velocity.y);
         //make movement smooth
         playerrigidbody.velocity = Vector3.SmoothDamp(playerrigidbody.velocity, actualMove, ref velocity, movementSmoothing);
 
@@ -211,16 +211,16 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         if (onGround)
         {
             jumpReset = true;
-            dashReset = true; 
+            dashReset = true;
         }
 
         if (onGround && jump)
         {
-            playerrigidbody.velocity = new Vector2 (playerrigidbody.velocity.x, jumpForce);
+            playerrigidbody.velocity = new Vector2(playerrigidbody.velocity.x, jumpForce);
         }
         else if (wallJump)
         {
-            playerrigidbody.velocity = new Vector2(wallForcex * -direction, wallForcey);
+            playerrigidbody.velocity = new Vector2(wallJumpX * -direction, wallJumpY);
             Invoke("SetWallJumpToFalse", wallJumpTimer);
         }
         else if (!onGround && doubleJump && jumpReset)
@@ -242,7 +242,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     public void Flip()
     {
         facingRight = !facingRight;
-         direction = Input.GetAxisRaw("Horizontal");
+        direction = Input.GetAxisRaw("Horizontal");
         //flip hit box
         Vector3 hitboxScale = transform.localScale;
         hitboxScale.x = (hitboxScale.x * -1);
