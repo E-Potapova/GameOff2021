@@ -33,8 +33,8 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     private bool dashReset = false;
 
     //crouch variables
-    private Vector2 standingColliderSize = new Vector2(2.9f, 1.76f);
-    private Vector2 crouchingcolliderSize = new Vector2(1, .5f);
+    private Vector2 standingColliderSize = new Vector2(0.5f, 2f);
+    private Vector2 crouchingcolliderSize = new Vector2(0.5f, 1f);
 
     //variable jump height
     private float jumpTimeCounter;
@@ -44,7 +44,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     //variables to check if are player is on the ground
     private bool onGround;
     public Transform toes;
-    private float checkRadius;
+    private float checkRadius = 0.01f;
     public LayerMask thisisGround;
 
     //variables for wall sliding
@@ -89,7 +89,6 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
 
         // animation support
         animator = GetComponent<Animator>();
-
     }
 
     // Update is called once per frame
@@ -112,22 +111,14 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
                 wallJump = true;
             }
         }
-        /*
-                if (Input.GetButtonUp("Jump"))
-                {
-                    jump = false;
-                    //doubleJump = false;
-                }*/
 
         if (Input.GetButtonDown("Crouch"))
         {
             crouch = true;
-
         }
         else if (Input.GetButtonUp("Crouch"))
         {
             crouch = false;
-
         }
 
         if (Input.GetButtonDown("Dash"))
@@ -145,13 +136,10 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         }
 
         // update animations
-        if (horizontalMove != 0 && onGround)
-        {
-            animator.SetBool("isRunning", true);
-        }
-        else if (horizontalMove == 0 && onGround){
-            animator.SetBool("isRunning", false);
-        }
+        if (horizontalMove != 0 && onGround) { animator.SetBool("isRunning", true); }
+        else if (horizontalMove == 0 && onGround){ animator.SetBool("isRunning", false); }
+        //else if (jump) { animator.SetBool("jump", true); }
+        //else if (!jump) { animator.SetBool("jump", false); }
     }
 
     private void FixedUpdate()
@@ -161,7 +149,6 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         doubleJump = false;
         dash = false;
 
-
         if (wallSlide)
         {
             playerrigidbody.velocity = new Vector2(playerrigidbody.velocity.x, Mathf.Clamp(playerrigidbody.velocity.y, -wallSlideSpeed, float.MaxValue));
@@ -169,6 +156,8 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         else if (playerrigidbody.velocity.y < 0)
         {
             playerrigidbody.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+            //animation support
+            animator.SetBool("isFalling", true);
         }
     }
 
@@ -220,23 +209,27 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         }
 
 
-
         //hey dumbo jumping stuff handled here
         if (onGround)
         {
             jumpReset = true;
             dashReset = true;
+            // animation support
+            animator.SetBool("isFalling", false);
         }
 
         if (onGround && jump)
         {
             playerrigidbody.velocity = new Vector2(playerrigidbody.velocity.x, jumpForce);
+            // animation support
+            animator.SetTrigger("jump");
         }
         else if (wallJump)
         {
             playerrigidbody.velocity = new Vector2(wallJumpX * -direction, wallJumpY);
             Invoke("SetWallJumpToFalse", wallJumpTimer);
         }
+        // double jump
         else if (!onGround && doubleJump && jumpReset)
         {
             playerrigidbody.velocity = new Vector2(playerrigidbody.velocity.x, jumpForce);
