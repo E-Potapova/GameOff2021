@@ -33,8 +33,8 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     private bool dashReset = false;
 
     //crouch variables
-    private Vector2 standingColliderSize = new Vector2(0.5f, 2f);
-    private Vector2 crouchingcolliderSize = new Vector2(0.5f, 1f);
+    private Vector2 standingColliderSize = new Vector2(1f, 2f);
+    private Vector2 crouchingcolliderSize = new Vector2(1f, 1f);
 
     //variable jump height
     private float jumpTimeCounter;
