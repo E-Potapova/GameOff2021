@@ -7,25 +7,24 @@ public static class EventManager
 {
     #region Take Damage
     // char take damage event support
-    static List<Spikes> takeDamageInvokers = new List<Spikes>();
-    static List<UnityAction<float>> takeDamageListeners = new List<UnityAction<float>>();
+    static List<DoesDamage> takeDamageInvokers = new List<DoesDamage>();
+    static List<UnityAction<int>> takeDamageListeners = new List<UnityAction<int>>();
 
-    public static void AddTakeDamageInvoker(Spikes invoker)
+    public static void AddTakeDamageInvoker(DoesDamage invoker)
     {
         takeDamageInvokers.Add(invoker);
-        foreach (UnityAction<float> listener in takeDamageListeners)
+        foreach (UnityAction<int> listener in takeDamageListeners)
         {
-            //if (invoker is Player)
-            //invoker.AddTakeDamageListener(listener);
+            invoker.AddTakeDamageListener(listener);
         }
     }
 
-    public static void AddTakeDamageListener(UnityAction<float> listener)
+    public static void AddTakeDamageListener(UnityAction<int> listener)
     {
         takeDamageListeners.Add(listener);
-        foreach (Spikes invoker in takeDamageInvokers)
+        foreach (DoesDamage invoker in takeDamageInvokers)
         {
-            //invoker.AddTakeDamageListener(listener);
+            invoker.AddTakeDamageListener(listener);
         }
     }
     #endregion
@@ -33,19 +32,19 @@ public static class EventManager
     #region Heal
     // char heal event support
     static List<GameObject> healInvokers = new List<GameObject>();
-    static List<UnityAction<float>> healListeners = new List<UnityAction<float>>();
+    static List<UnityAction<int>> healListeners = new List<UnityAction<int>>();
 
     public static void AddHealInvoker(GameObject invoker)
     {
         healInvokers.Add(invoker);
-        foreach (UnityAction<float> listener in healListeners)
+        foreach (UnityAction<int> listener in healListeners)
         {
             //if (invoker is Player)
             //invoker.AddHealListener(listener);
         }
     }
 
-    public static void AddHealListener(UnityAction<float> listener)
+    public static void AddHealListener(UnityAction<int> listener)
     {
         healListeners.Add(listener);
         foreach (GameObject invoker in healInvokers)
