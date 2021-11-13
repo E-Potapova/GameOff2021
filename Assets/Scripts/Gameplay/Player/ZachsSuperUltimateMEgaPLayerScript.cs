@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
 {
     #region Instance Variables 
-    //intilazie stuff
+
+    #region Movement Vars
+    //initialize stuff
     private float jumpForce;
     private float crouchSpeed;
     private float walkSpeed;
@@ -14,7 +16,6 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     private float movementSmoothing = .05f;
     float horizontalMove = 0;
     private float direction = 0;
-    private int hp;
 
     Vector3 actualMove;
     private bool facingRight = true;
@@ -46,8 +47,9 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
 
     //variables to check for ceilling
     public Transform head;
+    #endregion
 
-    #region Wall variables
+    #region Wall Vars
     //variables for wall sliding
     private bool onWall = false;
     public Transform wallhands;
@@ -67,16 +69,29 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     //get the collider
     private BoxCollider2D playerCollider;
 
+    //spawn flag
+    private Vector2 spawnPosition;
+
+    // for player smoothing
     private Vector3 velocity = Vector3.zero;
 
     // get animator
     private Animator animator;
+
+    // player health support
+    private int playerHealth;
+    private int maxHealth;
+    [SerializeField] Image[] hp;
+    [SerializeField] Sprite fullHeart;
+    [SerializeField] Sprite emptyHeart;
     #endregion
+
     // Start is called before the first frame update
     void Start()
     {
         playerrigidbody = GetComponent<Rigidbody2D>();
         playerCollider = GetComponent<BoxCollider2D>();
+        spawnPosition = transform.position;
 
         walkSpeed = ConfigurationUtils.PlayerSpeed;
         jumpForce = ConfigurationUtils.JumpForce;
@@ -86,13 +101,20 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         wallSlideSpeed = ConfigurationUtils.WallSlideSpeed;
         wallJumpX = ConfigurationUtils.WallJumpX;
         wallJumpY = ConfigurationUtils.WallJumpY;
-        hp = ConfigurationUtils.Health;
 
+
+        maxHealth = ConfigurationUtils.Health;
+        playerHealth = maxHealth;
+        SetMaxHealth();
+
+        // event support
+        EventManager.AddTakeDamageListener(TakeDamage);
 
         // animation support
         animator = GetComponent<Animator>();
     }
 
+    #region Movement
     // Update is called once per frame
     void Update()
     {
@@ -140,8 +162,6 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         // update animations
         if (horizontalMove != 0 && onGround) { animator.SetBool("isRunning", true); }
         else if (horizontalMove == 0 && onGround){ animator.SetBool("isRunning", false); }
-        //else if (jump) { animator.SetBool("jump", true); }
-        //else if (!jump) { animator.SetBool("jump", false); }
     }
 
     private void FixedUpdate()
@@ -254,13 +274,73 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         jumpReset = true;
         dashReset = true;
     }
+    #endregion
 
-
-    public void Respawn()
+    #region Health
+    private void TakeDamage(int damage)
     {
-
+        playerHealth -= damage;
+        print(playerHealth);
+        UpdateHp();
+        if (playerHealth < 1)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            SpawnAtFlag();
+        }
     }
 
+    private void SpawnAtFlag()
+    {
+        gameObject.transform.position = spawnPosition;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("SpawnFlag"))
+        {
+            spawnPosition = collision.gameObject.transform.position;
+        }
+    }
+
+    // visual
+    private void SetMaxHealth()
+    {
+        for (int i = 0; i < hp.Length; i++)
+        {
+            if (i < maxHealth)
+            {
+                hp[i].enabled = true;
+            }
+            else
+            {
+                hp[i].enabled = false;
+            }
+        }
+    }
+
+    //update sprites
+    private void UpdateHp()
+    {
+        if (playerHealth > maxHealth)
+        {
+            playerHealth = maxHealth;
+        }
+        for (int i = 0; i < hp.Length; i++)
+        {
+            if (i < playerHealth)
+            {
+                hp[i].sprite = fullHeart;
+            }
+            else
+            {
+                hp[i].sprite = emptyHeart;
+            }
+        }
+    }
+    #endregion
     //function to flip character sprite
     public void Flip()
     {

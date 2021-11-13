@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class projectile : MonoBehaviour
+public class Projectile : DoesDamage
 {
-    [SerializeField] private float projectileSpeed;
+    private float projectileSpeed;
 
-
-    public void ActiveProjectile()
+    public void SetSpeed(float speed)
     {
-        gameObject.SetActive(true);
+        projectileSpeed = speed;
     }
 
     public void Update()
@@ -18,9 +17,9 @@ public class projectile : MonoBehaviour
         transform.Translate(pSpeed, 0, 0); 
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected override void OnCollisionEnter2D(Collision2D collision)
     {
-        gameObject.SetActive(false);
+        base.OnCollisionEnter2D(collision);
+        Destroy(gameObject);
     }
-
 }

@@ -3,6 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Heal : UnityEvent<float>
+public class Heal : UnityEvent<int>
 {
 }
