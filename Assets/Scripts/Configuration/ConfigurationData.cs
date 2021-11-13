@@ -22,6 +22,7 @@ public class ConfigurationData
     float wallSlideSpeed = 1.5f;
     float wallJumpX = 30;
     float wallJumpY = 10;
+    int health;
 
 
     #endregion
@@ -62,6 +63,11 @@ public class ConfigurationData
     public float WallJumpY
     {
         get { return wallJumpY; }
+    }
+
+    public int Health
+    {
+        get { return health; }
     }
 
     #endregion
@@ -118,6 +124,7 @@ public class ConfigurationData
         wallSlideSpeed = float.Parse(values[5]);
         wallJumpX = float.Parse(values[6]);
         wallJumpY = float.Parse(values[7]);
+        health = int.Parse(values[8]);
 
     }
 }

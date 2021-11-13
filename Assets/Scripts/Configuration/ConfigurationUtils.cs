@@ -51,6 +51,11 @@ public static class ConfigurationUtils
         get { return configurationData.WallJumpY; }
     }
 
+    public static int Health
+    {
+        get { return configurationData.Health; }
+    }
+
     #endregion
 
     /// <summary>
