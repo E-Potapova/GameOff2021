@@ -7,10 +7,10 @@ public static class EventManager
 {
     #region Take Damage
     // char take damage event support
-    static List<GameObject> takeDamageInvokers = new List<GameObject>();
+    static List<Spikes> takeDamageInvokers = new List<Spikes>();
     static List<UnityAction<float>> takeDamageListeners = new List<UnityAction<float>>();
 
-    public static void AddTakeDamageInvoker(GameObject invoker)
+    public static void AddTakeDamageInvoker(Spikes invoker)
     {
         takeDamageInvokers.Add(invoker);
         foreach (UnityAction<float> listener in takeDamageListeners)
@@ -23,7 +23,7 @@ public static class EventManager
     public static void AddTakeDamageListener(UnityAction<float> listener)
     {
         takeDamageListeners.Add(listener);
-        foreach (GameObject invoker in takeDamageInvokers)
+        foreach (Spikes invoker in takeDamageInvokers)
         {
             //invoker.AddTakeDamageListener(listener);
         }

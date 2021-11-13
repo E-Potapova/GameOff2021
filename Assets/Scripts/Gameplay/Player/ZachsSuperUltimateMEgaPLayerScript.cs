@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
 {
-
+    #region Instance Variables 
     //intilazie stuff
     private float jumpForce;
     private float crouchSpeed;
@@ -13,6 +14,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     private float movementSmoothing = .05f;
     float horizontalMove = 0;
     private float direction = 0;
+    private int hp;
 
     Vector3 actualMove;
     private bool facingRight = true;
@@ -34,12 +36,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
 
     //crouch variables
     private Vector2 standingColliderSize = new Vector2(1f, 2f);
-    private Vector2 crouchingcolliderSize = new Vector2(1f, 1f);
-
-    //variable jump height
-    private float jumpTimeCounter;
-    private float jumpTime = 0.55f;
-    private bool isJumping = false;
+    private Vector2 crouchingcolliderSize = new Vector2(1f, 0.625f);
 
     //variables to check if are player is on the ground
     private bool onGround;
@@ -47,6 +44,10 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     private float checkRadius = 0.01f;
     public LayerMask thisisGround;
 
+    //variables to check for ceilling
+    public Transform head;
+
+    #region Wall variables
     //variables for wall sliding
     private bool onWall = false;
     public Transform wallhands;
@@ -58,7 +59,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     private float wallJumpX;
     private float wallJumpY;
     private float wallJumpTimer = 0.05f;
-
+    #endregion
 
     //get the rigidbody
     private Rigidbody2D playerrigidbody;
@@ -70,8 +71,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
 
     // get animator
     private Animator animator;
-
-
+    #endregion
     // Start is called before the first frame update
     void Start()
     {
@@ -86,6 +86,8 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         wallSlideSpeed = ConfigurationUtils.WallSlideSpeed;
         wallJumpX = ConfigurationUtils.WallJumpX;
         wallJumpY = ConfigurationUtils.WallJumpY;
+        hp = ConfigurationUtils.Health;
+
 
         // animation support
         animator = GetComponent<Animator>();
@@ -163,6 +165,14 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
 
     public void Move(float move, bool crouch, bool jump, bool dash)
     {
+
+        if (!crouch)
+        {
+            if (Physics2D.OverlapCircle(head.position, checkRadius, thisisGround))
+            {
+                crouch = true;
+            }
+        }
 
         //check for crouching
         //if crouching
@@ -243,6 +253,12 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         wallJump = false;
         jumpReset = true;
         dashReset = true;
+    }
+
+
+    public void Respawn()
+    {
+
     }
 
     //function to flip character sprite
