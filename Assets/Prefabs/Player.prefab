@@ -103,7 +103,6 @@ GameObject:
   - component: {fileID: 1296760476838727560}
   - component: {fileID: 1296760476838727561}
   - component: {fileID: 1296760476838727565}
-  - component: {fileID: 8132182223464481284}
   - component: {fileID: 1296760476838727564}
   m_Layer: 6
   m_Name: Player
@@ -167,7 +166,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 208598037
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b112e729774bd9e4885026ab45c0be6b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -245,21 +244,6 @@ MonoBehaviour:
     m_Bits: 32768
   head: {fileID: 211733626}
   wallhands: {fileID: 1296760475140899437}
-  hp: []
-  fullHeart: {fileID: 0}
-  emptyHeart: {fileID: 0}
---- !u!114 &8132182223464481284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1296760476838727286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f8f91a2680fda14d987f783d615fbba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   hp:
   - {fileID: 0}
   - {fileID: 0}
@@ -271,8 +255,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  fullheart: {fileID: 21300000, guid: becf70271d55dd34295073719afd8459, type: 3}
-  emptyheart: {fileID: 21300000, guid: 681d1937b89765d4b819fc80b6da59de, type: 3}
+  fullHeart: {fileID: 21300000, guid: becf70271d55dd34295073719afd8459, type: 3}
+  emptyHeart: {fileID: 21300000, guid: 681d1937b89765d4b819fc80b6da59de, type: 3}
 --- !u!95 &1296760476838727564
 Animator:
   serializedVersion: 3
