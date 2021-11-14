@@ -71,6 +71,11 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
 
     //spawn flag
     private Vector2 spawnPosition;
+    
+    //Soft spawn
+    private Vector2 softSpawn;
+    private float onGroundTime;
+    private bool setGroundTime = false;
 
     // for player smoothing
     private Vector3 velocity = Vector3.zero;
@@ -104,7 +109,6 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
 
 
         maxHealth = ConfigurationUtils.Health;
-        playerHealth = maxHealth;
         SetMaxHealth();
 
         // event support
@@ -178,9 +182,21 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         else if (playerrigidbody.velocity.y < 0)
         {
             playerrigidbody.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+            setGroundTime = false;
             //animation support
             animator.SetBool("isFalling", true);
         }
+
+        #region Soft Spawn
+        //Soft Spawn
+        if (onGround && (Time.unscaledTime - onGroundTime) > 5 && setGroundTime)
+        {
+            softSpawn = playerrigidbody.transform.position;
+            setGroundTime = false;
+            print("hellooo");
+        }
+        #endregion
+
     }
 
     public void Move(float move, bool crouch, bool jump, bool dash)
@@ -244,6 +260,11 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         {
             jumpReset = true;
             dashReset = true;
+            if (!setGroundTime)
+            {
+                onGroundTime = Time.unscaledTime;
+                setGroundTime = true;
+            }
             // animation support
             animator.SetBool("isFalling", false);
         }
@@ -284,17 +305,26 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         UpdateHp();
         if (playerHealth < 1)
         {
-            Destroy(gameObject);
+            SpawnAtFlag();
         }
         else
         {
-            SpawnAtFlag();
+            //SpawnAtFlag();
+            SoftSpawn();
         }
     }
 
     private void SpawnAtFlag()
     {
+        SetMaxHealth();
         gameObject.transform.position = spawnPosition;
+        playerrigidbody.velocity = new Vector2(0, 0);
+    }
+
+    private void SoftSpawn()
+    {
+        playerrigidbody.transform.position = softSpawn;
+        playerrigidbody.velocity = new Vector2(0, 0);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -308,6 +338,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     // visual
     private void SetMaxHealth()
     {
+        playerHealth = maxHealth;
         for (int i = 0; i < hp.Length; i++)
         {
             if (i < maxHealth)
@@ -319,6 +350,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
                 hp[i].enabled = false;
             }
         }
+        UpdateHp();
     }
 
     //update sprites
