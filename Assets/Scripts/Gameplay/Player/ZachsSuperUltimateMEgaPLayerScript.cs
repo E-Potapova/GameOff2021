@@ -91,6 +91,11 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     [SerializeField] Sprite emptyHeart;
     #endregion
 
+    //Player abilites toggle
+    private bool unlockedWallJump = false;
+    private bool unlockedDash = false;
+    private bool unlockedDoubleJump = false;
+
     // Start is called before the first frame update
     void Start()
     {
