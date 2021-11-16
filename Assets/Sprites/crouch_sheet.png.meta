@@ -1,25 +1,37 @@
 fileFormatVersion: 2
-guid: 3540cf8a30651ab41b9479f4c7444b20
+guid: 468da045a72e1484dbb03191c3f787d0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1440978893767313091
-    second: run_R_sheet_0
+      213: -8089544611722854749
+    second: crouch_sheet_0
   - first:
-      213: 3810035763086657047
-    second: run_R_sheet_1
+      213: -8081484336938415434
+    second: crouch_sheet_1
   - first:
-      213: 5694507644783973926
-    second: run_R_sheet_2
+      213: 2807506640368926909
+    second: crouch_sheet_2
   - first:
-      213: 2242272083025650318
-    second: run_R_sheet_3
+      213: -5157993076070575078
+    second: crouch_sheet_3
   - first:
-      213: -1927969924548938945
-    second: run_R_sheet_4
+      213: -4478946311104135447
+    second: crouch_sheet_4
   - first:
-      213: -711171625460452304
-    second: run_R_sheet_5
+      213: 6323291746823431442
+    second: crouch_sheet_5
+  - first:
+      213: 455120330596697586
+    second: crouch_sheet_6
+  - first:
+      213: 6416489408951769549
+    second: crouch_sheet_7
+  - first:
+      213: -686373124873710478
+    second: crouch_sheet_8
+  - first:
+      213: -3909007262264643901
+    second: crouch_sheet_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -133,127 +145,211 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: run_R_sheet_0
+      name: crouch_sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 64
-        height: 64
+        height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d39f92ca45d900ce0800000000000000
-      internalID: -1440978893767313091
+      spriteID: 3ae759f290a2cbf80800000000000000
+      internalID: -8089544611722854749
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run_R_sheet_1
+      name: crouch_sheet_1
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 64
-        height: 64
+        height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71680501757ffd430800000000000000
-      internalID: 3810035763086657047
+      spriteID: 6ba07e620dcc8df80800000000000000
+      internalID: -8081484336938415434
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run_R_sheet_2
+      name: crouch_sheet_2
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 64
-        height: 64
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 626581a3884f60f40800000000000000
-      internalID: 5694507644783973926
+      spriteID: db08db32a6446f620800000000000000
+      internalID: 2807506640368926909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run_R_sheet_3
+      name: crouch_sheet_3
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 64
-        height: 64
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e82e48654962e1f10800000000000000
-      internalID: 2242272083025650318
+      spriteID: a1493e220a02b68b0800000000000000
+      internalID: -5157993076070575078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run_R_sheet_4
+      name: crouch_sheet_4
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 64
-        height: 64
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f33bf9581997e35e0800000000000000
-      internalID: -1927969924548938945
+      spriteID: 9ee779e7f0697d1c0800000000000000
+      internalID: -4478946311104135447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run_R_sheet_5
+      name: crouch_sheet_5
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 64
-        height: 64
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 034b712bc296126f0800000000000000
-      internalID: -711171625460452304
+      spriteID: 215e19c6758d0c750800000000000000
+      internalID: 6323291746823431442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crouch_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f546438789e05600800000000000000
+      internalID: 455120330596697586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crouch_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc950a51f13fb0950800000000000000
+      internalID: 6416489408951769549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crouch_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274178c87438976f0800000000000000
+      internalID: -686373124873710478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crouch_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce2b441b9a60c9c0800000000000000
+      internalID: -3909007262264643901
       vertices: []
       indices: 
       edges: []
