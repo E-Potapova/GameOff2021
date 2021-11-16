@@ -37,7 +37,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
 
     //crouch variables
     private Vector2 standingColliderSize = new Vector2(1f, 2f);
-    private Vector2 crouchingcolliderSize = new Vector2(1f, 0.625f);
+    private Vector2 crouchingcolliderSize = new Vector2(1f, 1.25f);
 
     //variables to check if are player is on the ground
     private bool onGround;
@@ -196,7 +196,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         //Soft Spawn
         if (onGround && (Time.unscaledTime - onGroundTime) > 5 && setGroundTime)
         {
-            softSpawn = playerrigidbody.transform.position;
+            softSpawn = transform.position;
             setGroundTime = false;
             print("hellooo");
         }
@@ -221,10 +221,12 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         {
             playerCollider.size = crouchingcolliderSize;
             move = move * (crouchSpeed / 100);
+            animator.SetBool("isCrouched", true);
         }
         else
         {
             playerCollider.size = standingColliderSize;
+            animator.SetBool("isCrouched", false);
         }
 
         if (dash && dashReset)
@@ -322,13 +324,13 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     private void SpawnAtFlag()
     {
         SetMaxHealth();
-        gameObject.transform.position = spawnPosition;
+        transform.position = spawnPosition;
         playerrigidbody.velocity = new Vector2(0, 0);
     }
 
     private void SoftSpawn()
     {
-        playerrigidbody.transform.position = softSpawn;
+        transform.position = softSpawn;
         playerrigidbody.velocity = new Vector2(0, 0);
     }
 
