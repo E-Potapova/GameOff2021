@@ -162,10 +162,12 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         if (onWall && !onGround)
         {
             wallSlide = true;
+            animator.SetBool("onWall", true);
         }
         else
         {
             wallSlide = false;
+            animator.SetBool("onWall", false);
         }
 
         // update animations
@@ -286,6 +288,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         {
             playerrigidbody.velocity = new Vector2(wallJumpX * -direction, wallJumpY);
             Invoke("SetWallJumpToFalse", wallJumpTimer);
+            animator.SetTrigger("jump");
         }
         // double jump
         else if (!onGround && doubleJump && jumpReset)
