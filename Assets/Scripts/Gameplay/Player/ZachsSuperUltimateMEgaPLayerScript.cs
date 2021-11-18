@@ -15,7 +15,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     private float dashSpeed;
     private float movementSmoothing = .05f;
     float horizontalMove = 0;
-    private float direction = 0;
+    private float direction = 1;
 
     Vector3 actualMove;
     private bool facingRight = true;
@@ -148,10 +148,14 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         if (Input.GetButtonDown("Crouch"))
         {
             crouch = true;
+            // testing purposes
+            animator.SetBool("hasGloves", true);
+            animator.SetBool("isCrouched", true);
         }
         else if (Input.GetButtonUp("Crouch"))
         {
             crouch = false;
+            animator.SetBool("isCrouched", false);
         }
 
         if (Input.GetButtonDown("Dash"))
@@ -163,6 +167,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         {
             wallSlide = true;
             animator.SetBool("onWall", true);
+            animator.SetBool("isFalling", false);
         }
         else
         {
@@ -171,8 +176,10 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         }
 
         // update animations
-        if (horizontalMove != 0 && onGround) { animator.SetBool("isRunning", true); }
-        else if (horizontalMove == 0 && onGround){ animator.SetBool("isRunning", false); }
+        if (horizontalMove != 0) { animator.SetBool("isMoving", true); }
+        else if (horizontalMove == 0){ animator.SetBool("isMoving", false); }
+        if (onGround) { animator.SetBool("onGround", true); }
+        else if (!onGround) { animator.SetBool("onGround", false); }
     }
 
     private void FixedUpdate()
@@ -193,6 +200,11 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
             //animation support
             animator.SetBool("isFalling", true);
         }
+        // animation support
+        else if (playerrigidbody.velocity.y >= 0)
+        {
+            animator.SetBool("isFalling", false);
+        }
 
         #region Soft Spawn
         //Soft Spawn
@@ -200,7 +212,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         {
             softSpawn = transform.position;
             setGroundTime = false;
-            print("hellooo");
+            print("soft spawn flag set");
         }
         #endregion
 
@@ -223,12 +235,10 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         {
             playerCollider.size = crouchingcolliderSize;
             move = move * (crouchSpeed / 100);
-            animator.SetBool("isCrouched", true);
         }
         else
         {
             playerCollider.size = standingColliderSize;
-            animator.SetBool("isCrouched", false);
         }
 
         if (dash && dashReset)
@@ -274,8 +284,6 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
                 onGroundTime = Time.unscaledTime;
                 setGroundTime = true;
             }
-            // animation support
-            animator.SetBool("isFalling", false);
         }
 
         if (onGround && jump)
@@ -287,14 +295,16 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         else if (wallJump)
         {
             playerrigidbody.velocity = new Vector2(wallJumpX * -direction, wallJumpY);
-            Invoke("SetWallJumpToFalse", wallJumpTimer);
             animator.SetTrigger("jump");
+            SetWallJumpToFalse();
+            //Invoke("SetWallJumpToFalse", wallJumpTimer);
         }
-        // double jump
         else if (!onGround && doubleJump && jumpReset)
         {
+            // double jump
             playerrigidbody.velocity = new Vector2(playerrigidbody.velocity.x, jumpForce);
             jumpReset = false;
+            animator.SetTrigger("doubleJump");
         }
 
     }
@@ -384,7 +394,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     }
     #endregion
     //function to flip character sprite
-    public void Flip()
+    private void Flip()
     {
         facingRight = !facingRight;
         direction = Input.GetAxisRaw("Horizontal");
