@@ -78,4 +78,8 @@ public static class EventManager
         }
     }
     #endregion
+
+    #region Unlock Wall Jump
+    
+    #endregion
 }
