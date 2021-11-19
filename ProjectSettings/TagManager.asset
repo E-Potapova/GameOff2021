@@ -7,6 +7,9 @@ TagManager:
   - DoesDamage
   - SpawnFlag
   - SoftSpawn
+  - UnlockWallJump
+  - UnlockDash
+  - UnlockDoubleJump
   layers:
   - Default
   - TransparentFX

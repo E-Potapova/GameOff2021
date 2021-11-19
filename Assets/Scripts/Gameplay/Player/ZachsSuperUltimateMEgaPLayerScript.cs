@@ -34,6 +34,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
 
     //dash variables
     private bool dashReset = false;
+    private float dashTimer = 0;
 
     //crouch variables
     private Vector2 standingColliderSize = new Vector2(1f, 2f);
@@ -92,6 +93,9 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     #endregion
 
     //Player abilites toggle
+    private Vector2 unlockWallJump;
+    private Vector2 unlockDash;
+    private Vector2 unlockDoubleJump;
     private bool unlockedWallJump = false;
     private bool unlockedDash = false;
     private bool unlockedDoubleJump = false;
@@ -163,7 +167,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
             dash = true;
         }
 
-        if (onWall && !onGround)
+        if (unlockedWallJump && onWall && !onGround)
         {
             wallSlide = true;
             animator.SetBool("onWall", true);
@@ -184,7 +188,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Move(horizontalMove * Time.fixedDeltaTime, crouch, jump, dash);
+        Move(horizontalMove * Time.fixedDeltaTime, crouch);
         jump = false;
         doubleJump = false;
         dash = false;
@@ -208,7 +212,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
 
         #region Soft Spawn
         //Soft Spawn
-        if (onGround && (Time.unscaledTime - onGroundTime) > 5 && setGroundTime)
+        if (onGround && (Time.unscaledTime - onGroundTime) > 3 && setGroundTime)
         {
             softSpawn = transform.position;
             setGroundTime = false;
@@ -218,12 +222,12 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
 
     }
 
-    public void Move(float move, bool crouch, bool jump, bool dash)
+    public void Move(float move, bool crouch)
     {
-
+        #region crouch move
         if (!crouch)
         {
-            if (Physics2D.OverlapCircle(head.position, checkRadius, thisisGround))
+            if(Physics2D.OverlapCircle(head.position, checkRadius, thisisGround))
             {
                 crouch = true;
             }
@@ -240,10 +244,11 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         {
             playerCollider.size = standingColliderSize;
         }
+        #endregion
 
-        if (dash && dashReset)
+        #region dash 
+        if (unlockedDash && dash && dashReset && (dashTimer < (Time.unscaledTime -1)))
         {
-
             if (facingRight)
             {
                 move = dashSpeed;
@@ -255,10 +260,13 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
             }
             dashReset = false;
             onGround = false;
-
-            playerrigidbody.velocity = new Vector2(playerrigidbody.velocity.x, 2);
+            dashTimer = Time.unscaledTime;
+            playerrigidbody.velocity = new Vector2(playerrigidbody.velocity.x, 0);
         }
 
+        #endregion
+
+        #region normal move
         //actually move the character along y axis
         actualMove = new Vector2(move, playerrigidbody.velocity.y);
         //make movement smooth
@@ -272,8 +280,9 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         {
             Flip();
         }
+        #endregion
 
-
+        #region jump movement
         //hey dumbo jumping stuff handled here
         if (onGround)
         {
@@ -299,14 +308,14 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
             SetWallJumpToFalse();
             //Invoke("SetWallJumpToFalse", wallJumpTimer);
         }
-        else if (!onGround && doubleJump && jumpReset)
+        else if (unlockedDoubleJump && !onGround && doubleJump && jumpReset)
         {
             // double jump
             playerrigidbody.velocity = new Vector2(playerrigidbody.velocity.x, jumpForce);
             jumpReset = false;
             animator.SetTrigger("doubleJump");
         }
-
+        #endregion
     }
 
     void SetWallJumpToFalse()
@@ -352,6 +361,21 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         if (collision.gameObject.CompareTag("SpawnFlag"))
         {
             spawnPosition = collision.gameObject.transform.position;
+        }
+        else if (collision.gameObject.CompareTag("UnlockWallJump"))
+        {
+            print("Aquired Wall Jump");
+            unlockedWallJump = true;
+        }
+        else if (collision.gameObject.CompareTag("UnlockDash"))
+        {
+            print("Aquired Dash");
+            unlockedDash = true;
+        }
+        else if (collision.gameObject.CompareTag("UnlockDoubleJump"))
+        {
+            print("Aquired DoubleJump");
+            unlockedDoubleJump = true;
         }
     }
 
