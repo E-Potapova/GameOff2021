@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class Projectile : DoesDamage
 {
-    private float projectileSpeed;
-
-    public void SetSpeed(float speed)
+    private float projectileSpeedX;
+    private float projectileSpeedY;
+    public void SetSpeed(float speedX, float speedY)
     {
-        projectileSpeed = speed;
+        projectileSpeedX = speedX;
+        projectileSpeedY = speedY;
     }
 
     public void Update()
     {
-        float pSpeed = projectileSpeed * Time.deltaTime;
-        transform.Translate(pSpeed, 0, 0); 
+        float pSpeedX = projectileSpeedX * Time.deltaTime;
+        float pSpeedY = projectileSpeedY * Time.deltaTime;
+        transform.Translate(pSpeedX, pSpeedY, 0); 
     }
 
     protected override void OnCollisionEnter2D(Collision2D collision)
