@@ -5,7 +5,8 @@ using UnityEngine;
 public class Cannon : MonoBehaviour
 {
     [SerializeField] float attackTime;
-    [SerializeField] float bulletSpeed;
+    [SerializeField] float bulletSpeedX;
+    [SerializeField] float bulletSpeedY;
     [SerializeField] GameObject prefabBullet;
     private float cooldown;
 
@@ -31,6 +32,6 @@ public class Cannon : MonoBehaviour
         GameObject bullet = Instantiate<GameObject>(prefabBullet);
         bullet.transform.position = transform.position;
         Projectile script = bullet.GetComponent<Projectile>();
-        script.SetSpeed(bulletSpeed);
+        script.SetSpeed(bulletSpeedX, bulletSpeedY);
     }
 }
