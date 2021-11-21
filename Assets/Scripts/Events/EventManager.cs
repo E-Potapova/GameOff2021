@@ -79,7 +79,27 @@ public static class EventManager
     }
     #endregion
 
-    #region Unlock Wall Jump
-    
+    #region Unlock Ability
+    // unlock wall jump event support
+    static List<ZachsSuperUltimateMEgaPLayerScript> unlockAbilityInvokers = new List<ZachsSuperUltimateMEgaPLayerScript>();
+    static List<UnityAction<int>> unlockAbilityListeners = new List<UnityAction<int>>();
+
+    public static void AddUnlockWallJumpInvoker(ZachsSuperUltimateMEgaPLayerScript invoker)
+    {
+        unlockAbilityInvokers.Add(invoker);
+        foreach (UnityAction<int> listener in unlockAbilityListeners)
+        {
+            invoker.AddUnlockWallJumpListener(listener);
+        }
+    }
+
+    public static void AddUnlockWallJumpListener(UnityAction<int> listener)
+    {
+        unlockAbilityListeners.Add(listener);
+        foreach (ZachsSuperUltimateMEgaPLayerScript invoker in unlockAbilityInvokers)
+        {
+            invoker.AddUnlockWallJumpListener(listener);
+        }
+    }
     #endregion
 }

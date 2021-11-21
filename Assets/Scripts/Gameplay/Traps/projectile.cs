@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectile : DoesDamage
+public class projectile : DoesDamage
 {
     private float projectileSpeedX;
     private float projectileSpeedY;
