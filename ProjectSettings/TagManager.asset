@@ -5,11 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - DoesDamage
-  - SpawnFlag
-  - SoftSpawn
   - UnlockWallJump
   - UnlockDash
   - UnlockDoubleJump
+  - SoftSpawnFlag
+  - HardSpawnFlag
   layers:
   - Default
   - TransparentFX

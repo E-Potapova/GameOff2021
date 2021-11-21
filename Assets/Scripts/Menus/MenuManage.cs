@@ -7,7 +7,7 @@ public class MenuManage : MonoBehaviour
     private void Start()
     {
         // event support
-        EventManager.AddUnlockWallJumpListener(HandleAbilityUnlockMenus);
+        EventManager.AddUnlockAbilityListener(HandleAbilityUnlockMenus);
     }
 
     private void Update()

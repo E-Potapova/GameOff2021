@@ -62,7 +62,6 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     private bool wallJump = false;
     private float wallJumpX;
     private float wallJumpY;
-    private float wallJumpTimer = 0.05f;
     #endregion
 
     //get the rigidbody
@@ -71,32 +70,14 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     //get the collider
     private BoxCollider2D playerCollider;
 
-    //spawn flag
-    private Vector2 spawnPosition;
-    
-    //Soft spawn
-    private Vector2 softSpawn;
-    private float onGroundTime;
-    private bool setGroundTime = false;
-
     // for player smoothing
     private Vector3 velocity = Vector3.zero;
 
     // get animator
     private Animator animator;
-
-    // player health support
-    private int playerHealth;
-    private int maxHealth;
-    [SerializeField] Image[] hp;
-    [SerializeField] Sprite fullHeart;
-    [SerializeField] Sprite emptyHeart;
     #endregion
 
     //Player abilites toggle
-    private Vector2 unlockWallJump;
-    private Vector2 unlockDash;
-    private Vector2 unlockDoubleJump;
     private bool unlockedWallJump = false;
     private bool unlockedDash = false;
     private bool unlockedDoubleJump = false;
@@ -107,7 +88,6 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     {
         playerrigidbody = GetComponent<Rigidbody2D>();
         playerCollider = GetComponent<BoxCollider2D>();
-        spawnPosition = transform.position;
 
         walkSpeed = ConfigurationUtils.PlayerSpeed;
         jumpForce = ConfigurationUtils.JumpForce;
@@ -118,14 +98,9 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         wallJumpX = ConfigurationUtils.WallJumpX;
         wallJumpY = ConfigurationUtils.WallJumpY;
 
-
-        maxHealth = ConfigurationUtils.Health;
-        SetMaxHealth();
-
         // event support
-        EventManager.AddTakeDamageListener(TakeDamage);
         unlockAbilityEvent = new UnlockAbility();
-        EventManager.AddUnlockWallJumpInvoker(this);
+        EventManager.AddUnlockAbilityInvoker(this);
 
         // animation support
         animator = GetComponent<Animator>();
@@ -183,7 +158,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
 
         // update animations
         if (horizontalMove != 0) { animator.SetBool("isMoving", true); }
-        else if (horizontalMove == 0){ animator.SetBool("isMoving", false); }
+        else if (horizontalMove == 0) { animator.SetBool("isMoving", false); }
         if (onGround) { animator.SetBool("onGround", true); }
         else if (!onGround) { animator.SetBool("onGround", false); }
     }
@@ -202,7 +177,6 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         else if (playerrigidbody.velocity.y < 0)
         {
             playerrigidbody.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
-            setGroundTime = false;
             //animation support
             animator.SetBool("isFalling", true);
         }
@@ -211,17 +185,6 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         {
             animator.SetBool("isFalling", false);
         }
-
-        #region Soft Spawn
-        //Soft Spawn
-        if (onGround && (Time.unscaledTime - onGroundTime) > 3 && setGroundTime)
-        {
-            softSpawn = transform.position;
-            setGroundTime = false;
-            print("soft spawn flag set");
-        }
-        #endregion
-
     }
 
     public void Move(float move, bool crouch)
@@ -229,7 +192,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         #region crouch move
         if (!crouch)
         {
-            if(Physics2D.OverlapCircle(head.position, checkRadius, thisisGround))
+            if (Physics2D.OverlapCircle(head.position, checkRadius, thisisGround))
             {
                 crouch = true;
             }
@@ -249,7 +212,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         #endregion
 
         #region dash 
-        if (unlockedDash && dash && dashReset && (dashTimer < (Time.unscaledTime -1)))
+        if (unlockedDash && dash && dashReset && (dashTimer < (Time.unscaledTime - 1)))
         {
             if (facingRight)
             {
@@ -290,11 +253,6 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         {
             jumpReset = true;
             dashReset = true;
-            if (!setGroundTime)
-            {
-                onGroundTime = Time.unscaledTime;
-                setGroundTime = true;
-            }
         }
 
         if (onGround && jump)
@@ -308,7 +266,6 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
             playerrigidbody.velocity = new Vector2(wallJumpX * -direction, wallJumpY);
             animator.SetTrigger("jump");
             SetWallJumpToFalse();
-            //Invoke("SetWallJumpToFalse", wallJumpTimer);
         }
         else if (unlockedDoubleJump && !onGround && doubleJump && jumpReset)
         {
@@ -328,82 +285,9 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     }
     #endregion
 
-    #region Health
-    private void TakeDamage(int damage)
-    {
-        playerHealth -= damage;
-        print(playerHealth);
-        UpdateHp();
-        if (playerHealth < 1)
-        {
-            SpawnAtFlag();
-        }
-        else
-        {
-            //SpawnAtFlag();
-            SoftSpawn();
-        }
-    }
-
-    private void SpawnAtFlag()
-    {
-        SetMaxHealth();
-        transform.position = spawnPosition;
-        playerrigidbody.velocity = new Vector2(0, 0);
-    }
-
-    private void SoftSpawn()
-    {
-        transform.position = softSpawn;
-        playerrigidbody.velocity = new Vector2(0, 0);
-    }
-
-    // visual
-    private void SetMaxHealth()
-    {
-        playerHealth = maxHealth;
-        for (int i = 0; i < hp.Length; i++)
-        {
-            if (i < maxHealth)
-            {
-                hp[i].enabled = true;
-            }
-            else
-            {
-                hp[i].enabled = false;
-            }
-        }
-        UpdateHp();
-    }
-
-    //update sprites
-    private void UpdateHp()
-    {
-        if (playerHealth > maxHealth)
-        {
-            playerHealth = maxHealth;
-        }
-        for (int i = 0; i < hp.Length; i++)
-        {
-            if (i < playerHealth)
-            {
-                hp[i].sprite = fullHeart;
-            }
-            else
-            {
-                hp[i].sprite = emptyHeart;
-            }
-        }
-    }
-    #endregion
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("SpawnFlag"))
-        {
-            spawnPosition = collision.gameObject.transform.position;
-        }
-        else if (collision.gameObject.CompareTag("UnlockWallJump"))
+        if (collision.gameObject.CompareTag("UnlockWallJump"))
         {
             print("Acquired Wall Jump");
             unlockedWallJump = true;
@@ -437,7 +321,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     }
 
     #region Event Support
-    public void AddUnlockWallJumpListener(UnityAction<int> listener)
+    public void AddUnlockAbilityListener(UnityAction<int> listener)
     {
         unlockAbilityEvent.AddListener(listener);
     }
