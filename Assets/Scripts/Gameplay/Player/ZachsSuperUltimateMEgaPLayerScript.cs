@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
 {
@@ -99,6 +100,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     private bool unlockedWallJump = false;
     private bool unlockedDash = false;
     private bool unlockedDoubleJump = false;
+    UnlockAbility unlockAbilityEvent;
 
     // Start is called before the first frame update
     void Start()
@@ -122,6 +124,8 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
 
         // event support
         EventManager.AddTakeDamageListener(TakeDamage);
+        unlockAbilityEvent = new UnlockAbility();
+        EventManager.AddUnlockWallJumpInvoker(this);
 
         // animation support
         animator = GetComponent<Animator>();
@@ -152,8 +156,6 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         if (Input.GetButtonDown("Crouch"))
         {
             crouch = true;
-            // testing purposes
-            animator.SetBool("hasGloves", true);
             animator.SetBool("isCrouched", true);
         }
         else if (Input.GetButtonUp("Crouch"))
@@ -356,29 +358,6 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         playerrigidbody.velocity = new Vector2(0, 0);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("SpawnFlag"))
-        {
-            spawnPosition = collision.gameObject.transform.position;
-        }
-        else if (collision.gameObject.CompareTag("UnlockWallJump"))
-        {
-            print("Aquired Wall Jump");
-            unlockedWallJump = true;
-        }
-        else if (collision.gameObject.CompareTag("UnlockDash"))
-        {
-            print("Aquired Dash");
-            unlockedDash = true;
-        }
-        else if (collision.gameObject.CompareTag("UnlockDoubleJump"))
-        {
-            print("Aquired DoubleJump");
-            unlockedDoubleJump = true;
-        }
-    }
-
     // visual
     private void SetMaxHealth()
     {
@@ -417,6 +396,35 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         }
     }
     #endregion
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("SpawnFlag"))
+        {
+            spawnPosition = collision.gameObject.transform.position;
+        }
+        else if (collision.gameObject.CompareTag("UnlockWallJump"))
+        {
+            print("Acquired Wall Jump");
+            unlockedWallJump = true;
+            unlockAbilityEvent.Invoke(0);
+            // he now has gloves in animations
+            animator.SetBool("hasGloves", true);
+        }
+        else if (collision.gameObject.CompareTag("UnlockDash"))
+        {
+            print("Acquired Dash");
+            unlockedDash = true;
+            unlockAbilityEvent.Invoke(1);
+        }
+        else if (collision.gameObject.CompareTag("UnlockDoubleJump"))
+        {
+            print("Acquired DoubleJump");
+            unlockedDoubleJump = true;
+            unlockAbilityEvent.Invoke(2);
+        }
+    }
+
     //function to flip character sprite
     private void Flip()
     {
@@ -428,4 +436,10 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         transform.localScale = hitboxScale;
     }
 
+    #region Event Support
+    public void AddUnlockWallJumpListener(UnityAction<int> listener)
+    {
+        unlockAbilityEvent.AddListener(listener);
+    }
+    #endregion
 }

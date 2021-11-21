@@ -31,7 +31,7 @@ public class Cannon : MonoBehaviour
         cooldown = 0;
         GameObject bullet = Instantiate<GameObject>(prefabBullet);
         bullet.transform.position = transform.position;
-        Projectile script = bullet.GetComponent<Projectile>();
+        projectile script = bullet.GetComponent<projectile>();
         script.SetSpeed(bulletSpeedX, bulletSpeedY);
     }
 }
