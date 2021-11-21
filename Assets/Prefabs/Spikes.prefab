@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3256225980456917199}
   - component: {fileID: 3256225980456917194}
   - component: {fileID: 3256225980456917193}
-  - component: {fileID: 3256225980456917192}
   m_Layer: 15
   m_Name: Spikes
   m_TagString: DoesDamage
@@ -110,15 +109,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.9, y: 1.76}
   m_EdgeRadius: 0
---- !u!114 &3256225980456917192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3256225980456917198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 274fbad6c12962944bd41457adc33ed6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

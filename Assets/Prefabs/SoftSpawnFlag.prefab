@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1194449801625877394}
   - component: {fileID: 1194449801625877395}
   m_Layer: 8
-  m_Name: SpawnFlag
-  m_TagString: SpawnFlag
+  m_Name: SoftSpawnFlag
+  m_TagString: SoftSpawnFlag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

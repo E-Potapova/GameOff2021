@@ -10,12 +10,6 @@ public class Cannon : MonoBehaviour
     [SerializeField] GameObject prefabBullet;
     private float cooldown;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
     void Update()
     {
         cooldown = Time.deltaTime + cooldown;
