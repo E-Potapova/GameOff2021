@@ -72,18 +72,22 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     // for player smoothing
     private Vector3 velocity = Vector3.zero;
 
-    // get animator
-    private Animator animator;
-    #endregion
-
     //Player abilites toggle
     private bool unlockedWallJump = false;
     private bool unlockedDash = false;
     private bool unlockedDoubleJump = false;
     UnlockAbility unlockAbilityEvent;
 
+    // get animator
+    private Animator animator;
+
+    // particle fx support
+    public GameObject dirtEffect;
+    private float spawnDirtElapsed;
+    #endregion
+
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         playerrigidbody = GetComponent<Rigidbody2D>();
         playerCollider = GetComponent<BoxCollider2D>();
@@ -156,10 +160,35 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         }
 
         // update animations
-        if (horizontalMove != 0) { animator.SetBool("isMoving", true); }
-        else if (horizontalMove == 0) { animator.SetBool("isMoving", false); }
-        if (onGround) { animator.SetBool("onGround", true); }
-        else if (!onGround) { animator.SetBool("onGround", false); }
+        if (horizontalMove != 0)
+        { 
+            animator.SetBool("isMoving", true); 
+        }
+        else if (horizontalMove == 0)
+        { 
+            animator.SetBool("isMoving", false); 
+        }
+        if (onGround)
+        { 
+            animator.SetBool("onGround", true);
+        }
+        else if (!onGround)
+        { 
+            animator.SetBool("onGround", false); 
+        }
+        if (onGround && horizontalMove != 0)
+        {
+            // spawn dirt every 0.3 seconds while walking on the ground
+            if (spawnDirtElapsed > 0.4)
+            {
+                Instantiate(dirtEffect, (transform.position + new Vector3(0, -1, 0)), Quaternion.identity);
+                spawnDirtElapsed = 0;
+            }
+            else
+            {
+                spawnDirtElapsed += Time.deltaTime;
+            }
+        }
     }
 
     private void FixedUpdate()
@@ -257,20 +286,24 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         if (onGround && jump)
         {
             playerrigidbody.velocity = new Vector2(playerrigidbody.velocity.x, jumpForce);
-            // animation support
+            // visual support
             animator.SetTrigger("jump");
+            Instantiate(dirtEffect, (transform.position + new Vector3(0, -1, 0)), Quaternion.identity);
         }
         else if (wallJump)
         {
             playerrigidbody.velocity = new Vector2(wallJumpX * -direction, wallJumpY);
-            animator.SetTrigger("jump");
             SetWallJumpToFalse();
+            // visual support
+            animator.SetTrigger("jump");
+            Instantiate(dirtEffect, (transform.position + new Vector3(0, -1, 0)), Quaternion.identity);
         }
         else if (unlockedDoubleJump && !onGround && doubleJump && jumpReset)
         {
             // double jump
             playerrigidbody.velocity = new Vector2(playerrigidbody.velocity.x, jumpForce);
             jumpReset = false;
+            // visual support
             animator.SetTrigger("doubleJump");
         }
         #endregion
