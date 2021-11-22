@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Events;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -34,15 +33,22 @@ public class PlayerHealth : MonoBehaviour
     private void UpdateHealth(int val)
     {
         playerHealth += val;
-        //print(playerHealth);
-        UpdateHPSprites();
-        if (playerHealth < 1)
+        if (playerHealth > maxHealth)
         {
-            SpawnAtFlag(2);
+            playerHealth = maxHealth;
         }
-        else
+        print(playerHealth);
+        UpdateHPSprites();
+        if (val < 0)
         {
-            SpawnAtFlag(1);
+            if (playerHealth < 1)
+            {
+                SpawnAtFlag(2);
+            }
+            else
+            {
+                SpawnAtFlag(1);
+            }
         }
     }
 
@@ -83,10 +89,6 @@ public class PlayerHealth : MonoBehaviour
     //update sprites
     private void UpdateHPSprites()
     {
-        if (playerHealth > maxHealth)
-        {
-            playerHealth = maxHealth;
-        }
         for (int i = 0; i < hp.Length; i++)
         {
             if (i < playerHealth)
@@ -110,6 +112,9 @@ public class PlayerHealth : MonoBehaviour
             case ("HardSpawnFlag"):
                 hardSpawnPosition = collision.gameObject.transform.position;
                 break;
+            case ("Heals"):
+                UpdateHealth(1);
+                break;
         }
     }
 
@@ -119,9 +124,6 @@ public class PlayerHealth : MonoBehaviour
         {
             case ("DoesDamage"):
                 UpdateHealth(-1);
-                break;
-            case ("Heals"):
-                UpdateHealth(1);
                 break;
         }
     }

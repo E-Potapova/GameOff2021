@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MenuManage : MonoBehaviour
+public class MenuManager : MonoBehaviour
 {
     private void Start()
     {
