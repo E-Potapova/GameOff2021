@@ -152,6 +152,8 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         if (unlockedWallJump && onWall && !onGround)
         {
             wallSlide = true;
+            dashReset = true;
+            jumpReset = true;
             animator.SetBool("onWall", true);
             animator.SetBool("isFalling", false);
         }
