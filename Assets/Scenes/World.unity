@@ -14367,6 +14367,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
+      propertyPath: dirtEffect
+      value: 
+      objectReference: {fileID: 4675913851772382900, guid: 4eb96ad498df80f438f21f91bc48def5, type: 3}
+    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
       propertyPath: hp.Array.data[0]
       value: 
       objectReference: {fileID: 2147284434}

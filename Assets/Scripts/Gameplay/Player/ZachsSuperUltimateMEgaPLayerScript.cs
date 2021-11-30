@@ -83,7 +83,9 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
 
     // particle fx support
     public GameObject dirtEffect;
+    public GameObject dirtOnLandingEffect;
     private float spawnDirtElapsed;
+    private bool spawnedDirtOnLanding = true;
     #endregion
 
     // Start is called before the first frame update
@@ -166,22 +168,42 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         }
         else if (horizontalMove == 0)
         { 
-            animator.SetBool("isMoving", false); 
+            animator.SetBool("isMoving", false);
+            // particle timing support
+            spawnDirtElapsed = 0;
         }
         if (onGround)
         { 
             animator.SetBool("onGround", true);
+            if (!spawnedDirtOnLanding)
+            {
+                Instantiate(dirtOnLandingEffect, (transform.position + new Vector3(0, -(playerCollider.size.y) / 2, 0)), Quaternion.identity);
+                spawnedDirtOnLanding = true;
+            }
         }
         else if (!onGround)
         { 
-            animator.SetBool("onGround", false); 
+            animator.SetBool("onGround", false);
+            spawnedDirtOnLanding = false;
         }
+
+        // spawn particles when walking
         if (onGround && horizontalMove != 0)
         {
-            // spawn dirt every 0.3 seconds while walking on the ground
-            if (spawnDirtElapsed > 0.4)
+            // spawn dirt every 0.5 seconds while crouched on the ground
+            if (crouch && (spawnDirtElapsed > 0.5))
             {
-                Instantiate(dirtEffect, (transform.position + new Vector3(0, -1, 0)), Quaternion.identity);
+                Instantiate(dirtEffect,
+                    (transform.position + new Vector3(playerCollider.size.x/2 * direction, -(playerCollider.size.y) / 2, 0)),
+                    Quaternion.identity);
+                spawnDirtElapsed = 0;
+            }
+            // 0.4 seconds while running
+            else if (!crouch && (spawnDirtElapsed > 0.4))
+            {
+                Instantiate(dirtEffect, 
+                    (transform.position + new Vector3(playerCollider.size.x * direction, -(playerCollider.size.y)/2, 0)),
+                    Quaternion.identity);
                 spawnDirtElapsed = 0;
             }
             else
@@ -288,7 +310,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
             playerrigidbody.velocity = new Vector2(playerrigidbody.velocity.x, jumpForce);
             // visual support
             animator.SetTrigger("jump");
-            Instantiate(dirtEffect, (transform.position + new Vector3(0, -1, 0)), Quaternion.identity);
+            Instantiate(dirtEffect, (transform.position + new Vector3(0, -(playerCollider.size.y) / 2, 0)), Quaternion.identity);
         }
         else if (wallJump)
         {
@@ -296,7 +318,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
             SetWallJumpToFalse();
             // visual support
             animator.SetTrigger("jump");
-            Instantiate(dirtEffect, (transform.position + new Vector3(0, -1, 0)), Quaternion.identity);
+            Instantiate(dirtEffect, (transform.position + new Vector3(0, -(playerCollider.size.y) / 2, 0)), Quaternion.identity);
         }
         else if (unlockedDoubleJump && !onGround && doubleJump && jumpReset)
         {
@@ -350,6 +372,8 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         Vector3 hitboxScale = transform.localScale;
         hitboxScale.x = (hitboxScale.x * -1);
         transform.localScale = hitboxScale;
+        // particle timing support
+        spawnDirtElapsed = 0;
     }
 
     #region Event Support
