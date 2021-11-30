@@ -26270,18 +26270,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 1296760476838727561, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
-      propertyPath: m_Size.x
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1296760476838727561, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1296760476838727561, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1296760476838727562, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -26326,50 +26314,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
-      propertyPath: dirtEffect
-      value: 
-      objectReference: {fileID: 4675913851772382900, guid: 4eb96ad498df80f438f21f91bc48def5, type: 3}
-    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
-      propertyPath: hp.Array.data[0]
-      value: 
-      objectReference: {fileID: 2147284434}
-    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
-      propertyPath: hp.Array.data[1]
-      value: 
-      objectReference: {fileID: 659163765}
-    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
-      propertyPath: hp.Array.data[2]
-      value: 
-      objectReference: {fileID: 1918931865}
-    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
-      propertyPath: hp.Array.data[3]
-      value: 
-      objectReference: {fileID: 1583878443}
-    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
-      propertyPath: hp.Array.data[4]
-      value: 
-      objectReference: {fileID: 793994578}
-    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
-      propertyPath: hp.Array.data[5]
-      value: 
-      objectReference: {fileID: 1840476198}
-    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
-      propertyPath: hp.Array.data[6]
-      value: 
-      objectReference: {fileID: 2022088930}
-    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
-      propertyPath: hp.Array.data[7]
-      value: 
-      objectReference: {fileID: 1781012288}
-    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
-      propertyPath: hp.Array.data[8]
-      value: 
-      objectReference: {fileID: 1815496572}
-    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
-      propertyPath: hp.Array.data[9]
-      value: 
-      objectReference: {fileID: 948919040}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
 --- !u!1001 &1991161307
@@ -26951,6 +26895,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1242751501}
     m_Modifications:
+    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
+      propertyPath: dirtEffect
+      value: 
+      objectReference: {fileID: 4675913851772382900, guid: 4eb96ad498df80f438f21f91bc48def5, type: 3}
+    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
+      propertyPath: hp.Array.data[0]
+      value: 
+      objectReference: {fileID: 2147284434}
+    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
+      propertyPath: hp.Array.data[1]
+      value: 
+      objectReference: {fileID: 659163765}
+    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
+      propertyPath: hp.Array.data[2]
+      value: 
+      objectReference: {fileID: 1918931865}
+    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
+      propertyPath: hp.Array.data[3]
+      value: 
+      objectReference: {fileID: 1583878443}
+    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
+      propertyPath: hp.Array.data[4]
+      value: 
+      objectReference: {fileID: 793994578}
+    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
+      propertyPath: hp.Array.data[5]
+      value: 
+      objectReference: {fileID: 1840476198}
+    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
+      propertyPath: hp.Array.data[6]
+      value: 
+      objectReference: {fileID: 2022088930}
+    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
+      propertyPath: hp.Array.data[7]
+      value: 
+      objectReference: {fileID: 1781012288}
+    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
+      propertyPath: hp.Array.data[8]
+      value: 
+      objectReference: {fileID: 1815496572}
+    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
+      propertyPath: hp.Array.data[9]
+      value: 
+      objectReference: {fileID: 948919040}
     - target: {fileID: 3256225980456917198, guid: 459d5084e83f6f9499bef5a4f2c4f39c, type: 3}
       propertyPath: m_Name
       value: Spikes (13)
@@ -27007,50 +26995,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
-      propertyPath: dirtEffect
-      value: 
-      objectReference: {fileID: 4675913851772382900, guid: 4eb96ad498df80f438f21f91bc48def5, type: 3}
-    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
-      propertyPath: hp.Array.data[0]
-      value: 
-      objectReference: {fileID: 2147284434}
-    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
-      propertyPath: hp.Array.data[1]
-      value: 
-      objectReference: {fileID: 659163765}
-    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
-      propertyPath: hp.Array.data[2]
-      value: 
-      objectReference: {fileID: 1918931865}
-    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
-      propertyPath: hp.Array.data[3]
-      value: 
-      objectReference: {fileID: 1583878443}
-    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
-      propertyPath: hp.Array.data[4]
-      value: 
-      objectReference: {fileID: 793994578}
-    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
-      propertyPath: hp.Array.data[5]
-      value: 
-      objectReference: {fileID: 1840476198}
-    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
-      propertyPath: hp.Array.data[6]
-      value: 
-      objectReference: {fileID: 2022088930}
-    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
-      propertyPath: hp.Array.data[7]
-      value: 
-      objectReference: {fileID: 1781012288}
-    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
-      propertyPath: hp.Array.data[8]
-      value: 
-      objectReference: {fileID: 1815496572}
-    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
-      propertyPath: hp.Array.data[9]
-      value: 
-      objectReference: {fileID: 948919040}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459d5084e83f6f9499bef5a4f2c4f39c, type: 3}
 --- !u!1 &2026200508

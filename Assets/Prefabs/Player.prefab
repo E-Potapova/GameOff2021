@@ -246,6 +246,7 @@ MonoBehaviour:
   head: {fileID: 211733626}
   wallhands: {fileID: 1296760475140899437}
   dirtEffect: {fileID: 4675913851772382900, guid: 4eb96ad498df80f438f21f91bc48def5, type: 3}
+  dirtOnLandingEffect: {fileID: 382426779287527049, guid: 88444d3fa8e8db34db80c4903f180031, type: 3}
 --- !u!95 &1296760476838727564
 Animator:
   serializedVersion: 3
@@ -288,5 +289,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  fullHeart: {fileID: 21300000, guid: becf70271d55dd34295073719afd8459, type: 3}
-  emptyHeart: {fileID: 21300000, guid: 681d1937b89765d4b819fc80b6da59de, type: 3}
+  fullHeart: {fileID: -4426056663883962797, guid: 643d89eb06995b74a841239a76660ceb, type: 3}
+  emptyHeart: {fileID: -3538202717806749051, guid: 643d89eb06995b74a841239a76660ceb, type: 3}
+  damageEffect: {fileID: 3940048274403781693, guid: 22c99f1b8ff4e014e94ab456740e3836, type: 3}
+  healEffect: {fileID: 251823708375288567, guid: e2fa10b12424af447975f24beb728c50, type: 3}
