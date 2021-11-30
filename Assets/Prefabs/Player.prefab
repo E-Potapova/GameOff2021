@@ -245,6 +245,7 @@ MonoBehaviour:
     m_Bits: 32768
   head: {fileID: 211733626}
   wallhands: {fileID: 1296760475140899437}
+  dirtEffect: {fileID: 4675913851772382900, guid: 4eb96ad498df80f438f21f91bc48def5, type: 3}
 --- !u!95 &1296760476838727564
 Animator:
   serializedVersion: 3

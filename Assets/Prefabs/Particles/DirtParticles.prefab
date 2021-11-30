@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 4675913851772382889}
   - component: {fileID: 4675913851772382890}
   - component: {fileID: 4675913851772382891}
-  - component: {fileID: 8767661172024772301}
   m_Layer: 9
-  m_Name: Dirt
+  m_Name: DirtParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,13 +42,13 @@ ParticleSystem:
   serializedVersion: 7
   lengthInSec: 0.2
   simulationSpeed: 1
-  stopAction: 0
+  stopAction: 2
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -4808,15 +4807,3 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &8767661172024772301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4675913851772382900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b6e28c6586fd534cb6b2555e3e41537, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

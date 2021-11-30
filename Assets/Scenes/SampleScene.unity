@@ -3174,6 +3174,22 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1869173718, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
+      propertyPath: fullHeart
+      value: 
+      objectReference: {fileID: -4426056663883962797, guid: 643d89eb06995b74a841239a76660ceb, type: 3}
+    - target: {fileID: 1869173718, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
+      propertyPath: emptyHeart
+      value: 
+      objectReference: {fileID: -3538202717806749051, guid: 643d89eb06995b74a841239a76660ceb, type: 3}
+    - target: {fileID: 1869173718, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
+      propertyPath: healEffect
+      value: 
+      objectReference: {fileID: 251823708375288567, guid: e2fa10b12424af447975f24beb728c50, type: 3}
+    - target: {fileID: 1869173718, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
+      propertyPath: damageEffect
+      value: 
+      objectReference: {fileID: 3940048274403781693, guid: 22c99f1b8ff4e014e94ab456740e3836, type: 3}
+    - target: {fileID: 1869173718, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
       propertyPath: hp.Array.data[0]
       value: 
       objectReference: {fileID: 210879824}
@@ -3265,65 +3281,12 @@ PrefabInstance:
       propertyPath: dirtEffect
       value: 
       objectReference: {fileID: 4675913851772382900, guid: 4eb96ad498df80f438f21f91bc48def5, type: 3}
+    - target: {fileID: 1296760476838727565, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
+      propertyPath: dirtOnLandingEffect
+      value: 
+      objectReference: {fileID: 382426779287527049, guid: 88444d3fa8e8db34db80c4903f180031, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30669ccf81f8f0e4f80dba4c73a8192a, type: 3}
---- !u!1001 &2330886012115797375
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2330886011003575012, guid: a6de106793611d841a42bde68ee700f2, type: 3}
-      propertyPath: m_RootOrder
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2330886011003575012, guid: a6de106793611d841a42bde68ee700f2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 24.595764
-      objectReference: {fileID: 0}
-    - target: {fileID: 2330886011003575012, guid: a6de106793611d841a42bde68ee700f2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.34751976
-      objectReference: {fileID: 0}
-    - target: {fileID: 2330886011003575012, guid: a6de106793611d841a42bde68ee700f2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -297.84692
-      objectReference: {fileID: 0}
-    - target: {fileID: 2330886011003575012, guid: a6de106793611d841a42bde68ee700f2, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2330886011003575012, guid: a6de106793611d841a42bde68ee700f2, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2330886011003575012, guid: a6de106793611d841a42bde68ee700f2, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2330886011003575012, guid: a6de106793611d841a42bde68ee700f2, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2330886011003575012, guid: a6de106793611d841a42bde68ee700f2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2330886011003575012, guid: a6de106793611d841a42bde68ee700f2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2330886011003575012, guid: a6de106793611d841a42bde68ee700f2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2330886011003575014, guid: a6de106793611d841a42bde68ee700f2, type: 3}
-      propertyPath: m_Name
-      value: AudioSource
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a6de106793611d841a42bde68ee700f2, type: 3}
 --- !u!1001 &3256225979992207708
 PrefabInstance:
   m_ObjectHideFlags: 0

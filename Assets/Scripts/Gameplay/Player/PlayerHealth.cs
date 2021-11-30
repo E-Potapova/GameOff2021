@@ -19,6 +19,10 @@ public class PlayerHealth : MonoBehaviour
     // velocity support
     private Rigidbody2D playerrigidbody;
 
+    // particle support
+    public GameObject damageEffect;
+    public GameObject healEffect;
+
     void Start()
     {
         playerrigidbody = GetComponent<Rigidbody2D>();
@@ -114,6 +118,7 @@ public class PlayerHealth : MonoBehaviour
                 break;
             case ("Heals"):
                 UpdateHealth(1);
+                Instantiate(healEffect, transform.position, Quaternion.identity);
                 break;
         }
     }
@@ -124,6 +129,7 @@ public class PlayerHealth : MonoBehaviour
         {
             case ("DoesDamage"):
                 UpdateHealth(-1);
+                Instantiate(damageEffect, transform.position, Quaternion.identity);
                 break;
         }
     }
