@@ -82,7 +82,7 @@ MonoBehaviour:
     . .
 
 
-    You can now jump once more while already in the air.'
+    You can now jump while already in the air.'
 --- !u!1 &3853390908767538457
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,7 +117,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -50, y: 100}
+  m_AnchoredPosition: {x: 0, y: 100}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3853390908767538452
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -2397196546584765741, guid: f45811e4dde3a4347b1cd8a5c057e424, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
