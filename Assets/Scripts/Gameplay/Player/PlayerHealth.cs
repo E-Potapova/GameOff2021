@@ -119,6 +119,7 @@ public class PlayerHealth : MonoBehaviour
             case ("Heals"):
                 UpdateHealth(1);
                 Instantiate(healEffect, transform.position, Quaternion.identity);
+                Destroy(collision.gameObject);
                 break;
         }
     }

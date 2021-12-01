@@ -8,7 +8,7 @@ public class GameAudioSource : MonoBehaviour
     {
         if (!AudioManager.Initialized)
         {
-            AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+            AudioSource audioSource = gameObject.GetComponent<AudioSource>();
             AudioManager.Initialize(audioSource);
             DontDestroyOnLoad(gameObject);
         }

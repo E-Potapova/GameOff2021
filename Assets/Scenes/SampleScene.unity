@@ -6918,5 +6918,9 @@ PrefabInstance:
       propertyPath: bulletSpeedX
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 6408788827849406183, guid: 7e810230731137f4c9db3e13dce91e1a, type: 3}
+      propertyPath: prefabBullet
+      value: 
+      objectReference: {fileID: 8018415005323128653, guid: 99c7107350610e64fbef325713cb54ec, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e810230731137f4c9db3e13dce91e1a, type: 3}
