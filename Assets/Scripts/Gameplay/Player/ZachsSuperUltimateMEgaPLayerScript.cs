@@ -394,7 +394,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Finish"))
         {
-            //Object.Instantiate(Resources.Load("EndMenu"));
+            Object.Instantiate(Resources.Load("EndMenu"));
         }
     }
 
