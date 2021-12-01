@@ -350,18 +350,24 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
             unlockAbilityEvent.Invoke(0);
             // he now has gloves in animations
             animator.SetBool("hasGloves", true);
+            // delete flag
+            Destroy(collision.gameObject);
         }
         else if (collision.gameObject.CompareTag("UnlockDash"))
         {
             print("Acquired Dash");
             unlockedDash = true;
             unlockAbilityEvent.Invoke(1);
+            // delete flag
+            Destroy(collision.gameObject);
         }
         else if (collision.gameObject.CompareTag("UnlockDoubleJump"))
         {
             print("Acquired DoubleJump");
             unlockedDoubleJump = true;
             unlockAbilityEvent.Invoke(2);
+            // delete flag
+            Destroy(collision.gameObject);
         }
     }
 
