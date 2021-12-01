@@ -48,6 +48,7 @@ public class PlayerHealth : MonoBehaviour
             if (playerHealth < 1)
             {
                 SpawnAtFlag(2);
+                AudioManager.Play(AudioClipName.Death);
             }
             else
             {
@@ -119,6 +120,7 @@ public class PlayerHealth : MonoBehaviour
             case ("Heals"):
                 UpdateHealth(1);
                 Instantiate(healEffect, transform.position, Quaternion.identity);
+                AudioManager.Play(AudioClipName.Heal);
                 Destroy(collision.gameObject);
                 break;
         }
@@ -131,6 +133,7 @@ public class PlayerHealth : MonoBehaviour
             case ("DoesDamage"):
                 UpdateHealth(-1);
                 Instantiate(damageEffect, transform.position, Quaternion.identity);
+                AudioManager.Play(AudioClipName.Hurt);
                 break;
         }
     }
