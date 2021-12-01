@@ -180,6 +180,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
             if (!spawnedDirtOnLanding)
             {
                 Instantiate(dirtOnLandingEffect, (transform.position + new Vector3(0, -(playerCollider.size.y) / 2, 0)), Quaternion.identity);
+                AudioManager.Play(AudioClipName.Land);
                 spawnedDirtOnLanding = true;
             }
         }
@@ -193,19 +194,21 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         if (onGround && horizontalMove != 0)
         {
             // spawn dirt every 0.5 seconds while crouched on the ground
-            if (crouch && (spawnDirtElapsed > 0.5))
+            if (crouch && (spawnDirtElapsed > 0.48))
             {
                 Instantiate(dirtEffect,
                     (transform.position + new Vector3(playerCollider.size.x/2 * direction, -(playerCollider.size.y) / 2, 0)),
                     Quaternion.identity);
+                AudioManager.Play(AudioClipName.Step);
                 spawnDirtElapsed = 0;
             }
             // 0.4 seconds while running
-            else if (!crouch && (spawnDirtElapsed > 0.4))
+            else if (!crouch && (spawnDirtElapsed > 0.38))
             {
                 Instantiate(dirtEffect, 
                     (transform.position + new Vector3(playerCollider.size.x * direction, -(playerCollider.size.y)/2, 0)),
                     Quaternion.identity);
+                AudioManager.Play(AudioClipName.Step);
                 spawnDirtElapsed = 0;
             }
             else
@@ -279,6 +282,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
             onGround = false;
             dashTimer = Time.unscaledTime;
             playerrigidbody.velocity = new Vector2(playerrigidbody.velocity.x, 0);
+            AudioManager.Play(AudioClipName.Dash);
         }
 
         #endregion
@@ -348,6 +352,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
             print("Acquired Wall Jump");
             unlockedWallJump = true;
             unlockAbilityEvent.Invoke(0);
+            AudioManager.Play(AudioClipName.UnlockAbility);
             // he now has gloves in animations
             animator.SetBool("hasGloves", true);
             // delete flag
@@ -358,6 +363,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
             print("Acquired Dash");
             unlockedDash = true;
             unlockAbilityEvent.Invoke(1);
+            AudioManager.Play(AudioClipName.UnlockAbility);
             // delete flag
             Destroy(collision.gameObject);
         }
@@ -366,6 +372,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
             print("Acquired DoubleJump");
             unlockedDoubleJump = true;
             unlockAbilityEvent.Invoke(2);
+            AudioManager.Play(AudioClipName.UnlockAbility);
             // delete flag
             Destroy(collision.gameObject);
         }

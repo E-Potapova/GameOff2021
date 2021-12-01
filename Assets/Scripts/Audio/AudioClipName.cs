@@ -3,11 +3,12 @@
 /// </summary>
 public enum AudioClipName
 {
-    DirtStep,
-    Jump,
+    Step,
+    Land,
     Dash,
     DoubleJump,
     Hurt,
     Heal,
-    Death
+    Death,
+    UnlockAbility
 }
