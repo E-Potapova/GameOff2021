@@ -22,10 +22,10 @@ public static class AudioManager
         audioSource = source;
 
         audioClips.Add(AudioClipName.Step, Resources.Load<AudioClip>("SFX/Footsteps/Footstep_Dirt_03"));
-        audioClipVolumes.Add(AudioClipName.Step, 0.4f);
+        audioClipVolumes.Add(AudioClipName.Step, 0.8f);
 
         audioClips.Add(AudioClipName.Land, Resources.Load<AudioClip>("SFX/gravel"));
-        audioClipVolumes.Add(AudioClipName.Land, 0.5f);
+        audioClipVolumes.Add(AudioClipName.Land, 0.7f);
 
         audioClips.Add(AudioClipName.Dash, Resources.Load<AudioClip>("SFX/Dash/swosh-05"));
         audioClipVolumes.Add(AudioClipName.Dash, 0.5f);
@@ -34,16 +34,16 @@ public static class AudioManager
         audioClipVolumes.Add(AudioClipName.DoubleJump, 0.5f);
 
         audioClips.Add(AudioClipName.Hurt, Resources.Load<AudioClip>("SFX/Damage/hit14.mp3"));
-        audioClipVolumes.Add(AudioClipName.Hurt, 0.5f);
+        audioClipVolumes.Add(AudioClipName.Hurt, 0.6f);
 
         audioClips.Add(AudioClipName.Heal,Resources.Load<AudioClip>("SFX/Heal/healspell1"));
-        audioClipVolumes.Add(AudioClipName.Heal, 0.7f);
+        audioClipVolumes.Add(AudioClipName.Heal, 0.8f);
 
         audioClips.Add(AudioClipName.Death, Resources.Load<AudioClip>("SFX/death_bell_sound_effect"));
-        audioClipVolumes.Add(AudioClipName.Death, 0.8f);
+        audioClipVolumes.Add(AudioClipName.Death, 1.1f);
 
         audioClips.Add(AudioClipName.UnlockAbility, Resources.Load<AudioClip>("SFX/133008__cosmicd__annulet-of-absorption"));
-        audioClipVolumes.Add(AudioClipName.UnlockAbility, 0.8f);
+        audioClipVolumes.Add(AudioClipName.UnlockAbility, 0.9f);
     }
 
     public static void Play(AudioClipName name)

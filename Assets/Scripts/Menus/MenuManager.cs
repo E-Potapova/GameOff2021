@@ -12,7 +12,9 @@ public class MenuManager : MonoBehaviour
 
     private void Update()
     {
-        if (GameObject.Find("PauseMenu(Clone)") == null)
+        if (GameObject.Find("PauseMenu(Clone)") == null &&
+            GameObject.Find("StartMenu") == null &&
+            GameObject.Find("ControlsMenu(Clone)") == null)
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {

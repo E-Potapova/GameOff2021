@@ -392,6 +392,10 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
             // delete flag
             Destroy(collision.gameObject);
         }
+        else if (collision.gameObject.CompareTag("Finish"))
+        {
+            //Object.Instantiate(Resources.Load("EndMenu"));
+        }
     }
 
     //function to flip character sprite
