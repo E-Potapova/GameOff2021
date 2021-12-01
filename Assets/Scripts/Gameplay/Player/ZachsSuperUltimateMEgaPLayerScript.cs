@@ -129,6 +129,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         {
             jump = true;
             doubleJump = true;
+            //crouch = false;
             if (wallSlide)
             {
                 wallJump = true;
@@ -137,14 +138,22 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
 
         if (Input.GetButtonDown("Crouch"))
         {
-            crouch = true;
-            animator.SetBool("isCrouched", true);
+            if (!crouch & onGround)
+            {
+                crouch = true;
+                animator.SetBool("isCrouched", true);
+            }
+            else if (crouch)
+            {
+                crouch = false;
+                animator.SetBool("isCrouched", false);
+            }    
         }
-        else if (Input.GetButtonUp("Crouch"))
+      /*  else if (Input.GetButtonUp("Crouch"))
         {
             crouch = false;
             animator.SetBool("isCrouched", false);
-        }
+        }*/
 
         if (Input.GetButtonDown("Dash"))
         {
@@ -317,7 +326,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
             dashReset = true;
         }
 
-        if (onGround && jump)
+        if (onGround && jump && !crouch)
         {
             playerrigidbody.velocity = new Vector2(playerrigidbody.velocity.x, jumpForce);
             // visual support
