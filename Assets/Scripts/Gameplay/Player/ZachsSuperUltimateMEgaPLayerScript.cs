@@ -320,7 +320,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
             SetWallJumpToFalse();
             // visual support
             animator.SetTrigger("jump");
-            Instantiate(dirtEffect, (transform.position + new Vector3(0, -(playerCollider.size.y) / 2, 0)), Quaternion.identity);
+            Instantiate(dirtEffect, (transform.position + new Vector3(playerCollider.size.x / 2 * direction, -(playerCollider.size.y) / 2, 0)), Quaternion.identity);
         }
         else if (unlockedDoubleJump && !onGround && doubleJump && jumpReset)
         {
