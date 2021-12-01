@@ -247,6 +247,8 @@ MonoBehaviour:
   wallhands: {fileID: 1296760475140899437}
   dirtEffect: {fileID: 4675913851772382900, guid: 4eb96ad498df80f438f21f91bc48def5, type: 3}
   dirtOnLandingEffect: {fileID: 382426779287527049, guid: 88444d3fa8e8db34db80c4903f180031, type: 3}
+  dashEffect: {fileID: 4992440799161873706, guid: dd21b1716ecbae74f9df1a2622cbc2bc, type: 3}
+  dbjEffect: {fileID: 202950599223227211, guid: cf08951c0be1a4d4cb1da4263274b273, type: 3}
 --- !u!95 &1296760476838727564
 Animator:
   serializedVersion: 3
