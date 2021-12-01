@@ -1,0 +1,3564 @@
+fileFormatVersion: 2
+guid: e4d7076bb3afe4e40bfa0c8da02e7f50
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7023121240649610218
+    second: blocks_spikes_quarter_0
+  - first:
+      213: 3762354993722015240
+    second: blocks_spikes_quarter_1
+  - first:
+      213: 7322171137691459382
+    second: blocks_spikes_quarter_2
+  - first:
+      213: -3240377032506648358
+    second: blocks_spikes_quarter_3
+  - first:
+      213: 2634092019327701956
+    second: blocks_spikes_quarter_4
+  - first:
+      213: -268674531169586543
+    second: blocks_spikes_quarter_5
+  - first:
+      213: 8304497550231314757
+    second: blocks_spikes_quarter_6
+  - first:
+      213: 2969785029803788012
+    second: blocks_spikes_quarter_7
+  - first:
+      213: -8143064411766890665
+    second: blocks_spikes_quarter_8
+  - first:
+      213: -3919544586587767102
+    second: blocks_spikes_quarter_9
+  - first:
+      213: 2861475742178643517
+    second: blocks_spikes_quarter_10
+  - first:
+      213: 7667191797300106724
+    second: blocks_spikes_quarter_11
+  - first:
+      213: -760573036234991373
+    second: blocks_spikes_quarter_12
+  - first:
+      213: -2176548285995063169
+    second: blocks_spikes_quarter_13
+  - first:
+      213: -7866501159663494391
+    second: blocks_spikes_quarter_14
+  - first:
+      213: -3324123658856251196
+    second: blocks_spikes_quarter_15
+  - first:
+      213: -4567380799689652471
+    second: blocks_spikes_quarter_16
+  - first:
+      213: -1232645714843173509
+    second: blocks_spikes_quarter_17
+  - first:
+      213: 854535691819931634
+    second: blocks_spikes_quarter_18
+  - first:
+      213: 3812594500846033250
+    second: blocks_spikes_quarter_19
+  - first:
+      213: 1238214451179928444
+    second: blocks_spikes_quarter_20
+  - first:
+      213: 8847744449611319589
+    second: blocks_spikes_quarter_21
+  - first:
+      213: 839283653383162723
+    second: blocks_spikes_quarter_22
+  - first:
+      213: -5443985611540289359
+    second: blocks_spikes_quarter_23
+  - first:
+      213: -772112270433961683
+    second: blocks_spikes_quarter_24
+  - first:
+      213: -7644912297526295603
+    second: blocks_spikes_quarter_25
+  - first:
+      213: -2295070823509888134
+    second: blocks_spikes_quarter_26
+  - first:
+      213: 500199458694594533
+    second: blocks_spikes_quarter_27
+  - first:
+      213: 5166503529477415498
+    second: blocks_spikes_quarter_28
+  - first:
+      213: 3184409814181968228
+    second: blocks_spikes_quarter_29
+  - first:
+      213: 1371864487119124152
+    second: blocks_spikes_quarter_30
+  - first:
+      213: -5101108854924768182
+    second: blocks_spikes_quarter_31
+  - first:
+      213: -4197206456395412847
+    second: blocks_spikes_quarter_32
+  - first:
+      213: -8370941277208818319
+    second: blocks_spikes_quarter_33
+  - first:
+      213: 7936947237843505288
+    second: blocks_spikes_quarter_34
+  - first:
+      213: -4053844996040824558
+    second: blocks_spikes_quarter_35
+  - first:
+      213: 8592756017127354658
+    second: blocks_spikes_quarter_36
+  - first:
+      213: -3577018816305046146
+    second: blocks_spikes_quarter_37
+  - first:
+      213: 7634111323809749677
+    second: blocks_spikes_quarter_38
+  - first:
+      213: -5134781506731590963
+    second: blocks_spikes_quarter_39
+  - first:
+      213: -8512357767954267542
+    second: blocks_spikes_quarter_40
+  - first:
+      213: -5341119669219686330
+    second: blocks_spikes_quarter_41
+  - first:
+      213: 8567429839029827250
+    second: blocks_spikes_quarter_42
+  - first:
+      213: 206350885985462457
+    second: blocks_spikes_quarter_43
+  - first:
+      213: 6527378959405477896
+    second: blocks_spikes_quarter_44
+  - first:
+      213: 8295694946653849465
+    second: blocks_spikes_quarter_45
+  - first:
+      213: -191742034045541303
+    second: blocks_spikes_quarter_46
+  - first:
+      213: 6139093958708452143
+    second: blocks_spikes_quarter_47
+  - first:
+      213: 3748527569761784030
+    second: blocks_spikes_quarter_48
+  - first:
+      213: -3879548598323927138
+    second: blocks_spikes_quarter_49
+  - first:
+      213: 4633107215304315114
+    second: blocks_spikes_quarter_50
+  - first:
+      213: 3878765916328794106
+    second: blocks_spikes_quarter_51
+  - first:
+      213: -6036868299451970580
+    second: blocks_spikes_quarter_52
+  - first:
+      213: -3291818706816263081
+    second: blocks_spikes_quarter_53
+  - first:
+      213: -5613312168849462183
+    second: blocks_spikes_quarter_54
+  - first:
+      213: 7880005557394181861
+    second: blocks_spikes_quarter_55
+  - first:
+      213: -3759051940884583645
+    second: blocks_spikes_quarter_56
+  - first:
+      213: -5998320374891894186
+    second: blocks_spikes_quarter_57
+  - first:
+      213: -4067043149700457574
+    second: blocks_spikes_quarter_58
+  - first:
+      213: 950828429048663530
+    second: blocks_spikes_quarter_59
+  - first:
+      213: -1916559289624318160
+    second: blocks_spikes_quarter_60
+  - first:
+      213: -6678540584394500614
+    second: blocks_spikes_quarter_61
+  - first:
+      213: 574156146505974466
+    second: blocks_spikes_quarter_62
+  - first:
+      213: 1392951326641437830
+    second: blocks_spikes_quarter_63
+  - first:
+      213: -3007196045771141775
+    second: blocks_spikes_quarter_64
+  - first:
+      213: 1092075735330234301
+    second: blocks_spikes_quarter_65
+  - first:
+      213: -4896904750312492279
+    second: blocks_spikes_quarter_66
+  - first:
+      213: 6866694724367529843
+    second: blocks_spikes_quarter_67
+  - first:
+      213: 7410379735733090197
+    second: blocks_spikes_quarter_68
+  - first:
+      213: 3051502303967217281
+    second: blocks_spikes_quarter_69
+  - first:
+      213: 590129760841432685
+    second: blocks_spikes_quarter_70
+  - first:
+      213: -462066389747317955
+    second: blocks_spikes_quarter_71
+  - first:
+      213: 1591714100727283704
+    second: blocks_spikes_quarter_72
+  - first:
+      213: 28641319000499178
+    second: blocks_spikes_quarter_73
+  - first:
+      213: -2253716508715578918
+    second: blocks_spikes_quarter_74
+  - first:
+      213: -5697724881699474421
+    second: blocks_spikes_quarter_75
+  - first:
+      213: -3656699053829444666
+    second: blocks_spikes_quarter_76
+  - first:
+      213: 3099539799504632488
+    second: blocks_spikes_quarter_77
+  - first:
+      213: -3679516757335234119
+    second: blocks_spikes_quarter_78
+  - first:
+      213: -8533794110741132519
+    second: blocks_spikes_quarter_79
+  - first:
+      213: -9156672255077344559
+    second: blocks_spikes_quarter_80
+  - first:
+      213: 1280761455352083051
+    second: blocks_spikes_quarter_81
+  - first:
+      213: 5747241825858890339
+    second: blocks_spikes_quarter_82
+  - first:
+      213: -467648635674078650
+    second: blocks_spikes_quarter_83
+  - first:
+      213: 5098812052154165098
+    second: blocks_spikes_quarter_84
+  - first:
+      213: -7525688568091625375
+    second: blocks_spikes_quarter_85
+  - first:
+      213: -7235949790626269319
+    second: blocks_spikes_quarter_86
+  - first:
+      213: -8009226347488874165
+    second: blocks_spikes_quarter_87
+  - first:
+      213: 7729000401851113305
+    second: blocks_spikes_quarter_88
+  - first:
+      213: 7973583751364862194
+    second: blocks_spikes_quarter_89
+  - first:
+      213: 5047807819740501964
+    second: blocks_spikes_quarter_90
+  - first:
+      213: 6065712554951993229
+    second: blocks_spikes_quarter_91
+  - first:
+      213: 351928758644674743
+    second: blocks_spikes_quarter_92
+  - first:
+      213: -6802555158960812578
+    second: blocks_spikes_quarter_93
+  - first:
+      213: -855848196758797970
+    second: blocks_spikes_quarter_94
+  - first:
+      213: 5527324196665070674
+    second: blocks_spikes_quarter_95
+  - first:
+      213: 6848420213169828957
+    second: blocks_spikes_quarter_96
+  - first:
+      213: -102448688639708573
+    second: blocks_spikes_quarter_97
+  - first:
+      213: 7292647901805117731
+    second: blocks_spikes_quarter_98
+  - first:
+      213: -792407666575765201
+    second: blocks_spikes_quarter_99
+  - first:
+      213: -1982677842668928631
+    second: blocks_spikes_quarter_100
+  - first:
+      213: -3527339394553089090
+    second: blocks_spikes_quarter_101
+  - first:
+      213: 288931120059188130
+    second: blocks_spikes_quarter_102
+  - first:
+      213: 16052819598161522
+    second: blocks_spikes_quarter_103
+  - first:
+      213: -7292364101389324702
+    second: blocks_spikes_quarter_104
+  - first:
+      213: -3252514828037584558
+    second: blocks_spikes_quarter_105
+  - first:
+      213: -8427410277957500974
+    second: blocks_spikes_quarter_106
+  - first:
+      213: 4654083332994743034
+    second: blocks_spikes_quarter_107
+  - first:
+      213: -4593838090209617432
+    second: blocks_spikes_quarter_108
+  - first:
+      213: 1768361710245478743
+    second: blocks_spikes_quarter_109
+  - first:
+      213: -3084796402062034456
+    second: blocks_spikes_quarter_110
+  - first:
+      213: -3968820003574674883
+    second: blocks_spikes_quarter_111
+  - first:
+      213: 215557399772905831
+    second: blocks_spikes_quarter_112
+  - first:
+      213: 2701829641196972041
+    second: blocks_spikes_quarter_113
+  - first:
+      213: -523650860186803399
+    second: blocks_spikes_quarter_114
+  - first:
+      213: 3217298275163101560
+    second: blocks_spikes_quarter_115
+  - first:
+      213: -8188464059328144800
+    second: blocks_spikes_quarter_116
+  - first:
+      213: -5599647059448741649
+    second: blocks_spikes_quarter_117
+  - first:
+      213: -5095439052184840344
+    second: blocks_spikes_quarter_118
+  - first:
+      213: 4048173379645143282
+    second: blocks_spikes_quarter_119
+  - first:
+      213: -4126285100322457819
+    second: blocks_spikes_quarter_120
+  - first:
+      213: 5343363804312565007
+    second: blocks_spikes_quarter_121
+  - first:
+      213: 5490294293712336353
+    second: blocks_spikes_quarter_122
+  - first:
+      213: -7756493810986551752
+    second: blocks_spikes_quarter_123
+  - first:
+      213: -6810074994913270783
+    second: blocks_spikes_quarter_124
+  - first:
+      213: 5925359213671557182
+    second: blocks_spikes_quarter_125
+  - first:
+      213: -3146249091619633529
+    second: blocks_spikes_quarter_126
+  - first:
+      213: -6598710227006626117
+    second: blocks_spikes_quarter_127
+  - first:
+      213: 6305943125296974141
+    second: blocks_spikes_quarter_128
+  - first:
+      213: -4181203313773005343
+    second: blocks_spikes_quarter_129
+  - first:
+      213: 7705472941291256492
+    second: blocks_spikes_quarter_130
+  - first:
+      213: -8107134810660219811
+    second: blocks_spikes_quarter_131
+  - first:
+      213: 8076072127113735483
+    second: blocks_spikes_quarter_132
+  - first:
+      213: 629662477169647332
+    second: blocks_spikes_quarter_133
+  - first:
+      213: 5940437317630953882
+    second: blocks_spikes_quarter_134
+  - first:
+      213: -2209720427557306507
+    second: blocks_spikes_quarter_135
+  - first:
+      213: 4922977800866893230
+    second: blocks_spikes_quarter_136
+  - first:
+      213: -6440104912203240397
+    second: blocks_spikes_quarter_137
+  - first:
+      213: 3839886636700123862
+    second: blocks_spikes_quarter_138
+  - first:
+      213: -3960827404887674869
+    second: blocks_spikes_quarter_139
+  - first:
+      213: -7881420175954644873
+    second: blocks_spikes_quarter_140
+  - first:
+      213: -5087299086897025232
+    second: blocks_spikes_quarter_141
+  - first:
+      213: 1129914831235670925
+    second: blocks_spikes_quarter_142
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 44
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c4494117cd88e90800000000000000
+      internalID: -7023121240649610218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 44
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80eb7b7dee1963430800000000000000
+      internalID: 3762354993722015240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_2
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 44
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f97beead39d9560800000000000000
+      internalID: 7322171137691459382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_3
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 44
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad85b17d14ed703d0800000000000000
+      internalID: -3240377032506648358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 44
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c318bd4cbc2e8420800000000000000
+      internalID: 2634092019327701956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_5
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 44
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1923179ffe9754cf0800000000000000
+      internalID: -268674531169586543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_6
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 44
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541a3a7d5808f3370800000000000000
+      internalID: 8304497550231314757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_7
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 44
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce64ab000cbc63920800000000000000
+      internalID: 2969785029803788012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 44
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f5281bf060efe80800000000000000
+      internalID: -8143064411766890665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_9
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 44
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce712317fafa99c0800000000000000
+      internalID: -3919544586587767102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_10
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 44
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e84f9d60106b720800000000000000
+      internalID: 2861475742178643517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_11
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 44
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e59cde2156576a60800000000000000
+      internalID: 7667191797300106724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f8197d6ad6e175f0800000000000000
+      internalID: -760573036234991373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_13
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 40
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7867c0add85bc1e0800000000000000
+      internalID: -2176548285995063169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_14
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 40
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b1f01bfd294d290800000000000000
+      internalID: -7866501159663494391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_15
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 40
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c0c66ce4275ed1d0800000000000000
+      internalID: -3324123658856251196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_16
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 40
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9070f889c576d90c0800000000000000
+      internalID: -4567380799689652471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_17
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 40
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d7dd0d043c4eee0800000000000000
+      internalID: -1232645714843173509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_18
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 40
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7d1d62fabebdb00800000000000000
+      internalID: 854535691819931634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_19
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 40
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269198f9f7e09e430800000000000000
+      internalID: 3812594500846033250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_20
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 40
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7bb556ab750f2110800000000000000
+      internalID: 1238214451179928444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_21
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 40
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529448613b089ca70800000000000000
+      internalID: 8847744449611319589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_22
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 40
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b02b9390cb5ab00800000000000000
+      internalID: 839283653383162723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_23
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 40
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b8adc50ee31374b0800000000000000
+      internalID: -5443985611540289359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29301a1bf7e845f0800000000000000
+      internalID: -772112270433961683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_25
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 36
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc30ee615c0d7e590800000000000000
+      internalID: -7644912297526295603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_26
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 36
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73745eee354620e0800000000000000
+      internalID: -2295070823509888134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_27
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 36
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef755ce1c011f600800000000000000
+      internalID: 500199458694594533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_28
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 36
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42ad45369b13b740800000000000000
+      internalID: 5166503529477415498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_29
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 36
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4697591badb413c20800000000000000
+      internalID: 3184409814181968228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_30
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 36
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b675ba8b77d90310800000000000000
+      internalID: 1371864487119124152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_31
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 36
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c0c95f5883539b0800000000000000
+      internalID: -5101108854924768182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_32
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 36
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a439537f680c5c0800000000000000
+      internalID: -4197206456395412847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_33
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 36
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d4050724174db80800000000000000
+      internalID: -8370941277208818319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_34
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 36
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8801ea80673b52e60800000000000000
+      internalID: 7936947237843505288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_35
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 36
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219ed7c4479ddb7c0800000000000000
+      internalID: -4053844996040824558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 221f97a321a9f3770800000000000000
+      internalID: 8592756017127354658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_37
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 32
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ddf33a650eb5ec0800000000000000
+      internalID: -3577018816305046146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_38
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 32
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa977f3dcfc1f960800000000000000
+      internalID: 7634111323809749677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_39
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 32
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcab404cc679db8b0800000000000000
+      internalID: -5134781506731590963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_40
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a628c00e5b70ed980800000000000000
+      internalID: -8512357767954267542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_41
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 32
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6480f4595f780e5b0800000000000000
+      internalID: -5341119669219686330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_42
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 32
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b67471eb00a5e670800000000000000
+      internalID: 8567429839029827250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_43
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 32
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b8204a990b1dd200800000000000000
+      internalID: 206350885985462457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_44
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800f8bd7498e59a50800000000000000
+      internalID: 6527378959405477896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_45
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 32
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9774e4cf99a302370800000000000000
+      internalID: 8295694946653849465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_46
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 32
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944643cc2abc65df0800000000000000
+      internalID: -191742034045541303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_47
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 32
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b509bdd61723550800000000000000
+      internalID: 6139093958708452143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 28
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0d862d6f1750430800000000000000
+      internalID: 3748527569761784030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_49
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 28
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e97a904ca13192ac0800000000000000
+      internalID: -3879548598323927138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_50
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 28
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0538e077a1c4040800000000000000
+      internalID: 4633107215304315114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_51
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 28
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af79ba1ec0524d530800000000000000
+      internalID: 3878765916328794106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_52
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 28
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb495f244cb83ca0800000000000000
+      internalID: -6036868299451970580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_53
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 28
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c1b33b35c1152d0800000000000000
+      internalID: -3291818706816263081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_54
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 28
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ca952b2528912b0800000000000000
+      internalID: -5613312168849462183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_55
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 28
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee859ced476b5d60800000000000000
+      internalID: 7880005557394181861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_56
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 28
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32be4531d2a25dbc0800000000000000
+      internalID: -3759051940884583645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_57
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 28
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65aa495466fa1cca0800000000000000
+      internalID: -5998320374891894186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_58
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 28
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b1befadc5fe87c0800000000000000
+      internalID: -4067043149700457574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_59
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 28
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aedc9c32b65023d00800000000000000
+      internalID: 950828429048663530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03fa7fefa730765e0800000000000000
+      internalID: -1916559289624318160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_61
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 24
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af5d22119be0153a0800000000000000
+      internalID: -6678540584394500614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_62
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 24
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c2881629ffc7f700800000000000000
+      internalID: 574156146505974466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_63
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 24
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c3fd5f9d1c45310800000000000000
+      internalID: 1392951326641437830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_64
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 24
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d0ad1112b4446d0800000000000000
+      internalID: -3007196045771141775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_65
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 24
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf9e206815d72f00800000000000000
+      internalID: 1092075735330234301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_66
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 24
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90373b21313ba0cb0800000000000000
+      internalID: -4896904750312492279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_67
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 24
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377b9f278766b4f50800000000000000
+      internalID: 6866694724367529843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_68
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 24
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597bf179b15f6d660800000000000000
+      internalID: 7410379735733090197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_69
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 24
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 186804b8d2d195a20800000000000000
+      internalID: 3051502303967217281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_70
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 24
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ef65e04ef803800800000000000000
+      internalID: 590129760841432685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_71
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 24
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33c67011196699f0800000000000000
+      internalID: -462066389747317955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff74d59a87e61610800000000000000
+      internalID: 1591714100727283704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_73
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 20
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae36cecb021c56000800000000000000
+      internalID: 28641319000499178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_74
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 20
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad90399a6c039b0e0800000000000000
+      internalID: -2253716508715578918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_75
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 20
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04f56e686d9de0b0800000000000000
+      internalID: -5697724881699474421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_76
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 20
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb2df5a59bc04dc0800000000000000
+      internalID: -3656699053829444666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_77
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 20
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aab8ac8607c30b20800000000000000
+      internalID: 3099539799504632488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_78
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 20
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b9afed010bbfecc0800000000000000
+      internalID: -3679516757335234119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_79
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 20
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b44f2687fd19980800000000000000
+      internalID: -8533794110741132519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_80
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 20
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da907f1917fce080800000000000000
+      internalID: -9156672255077344559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_81
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 20
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62f54402cd26c110800000000000000
+      internalID: 1280761455352083051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_82
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 20
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a269c8dfd42cf40800000000000000
+      internalID: 5747241825858890339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_83
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 20
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64253f62b049289f0800000000000000
+      internalID: -467648635674078650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a672129fb8e92c640800000000000000
+      internalID: 5098812052154165098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_85
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 16
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1683ea0ce126f8790800000000000000
+      internalID: -7525688568091625375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_86
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 16
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977b82dc00eb49b90800000000000000
+      internalID: -7235949790626269319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_87
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 16
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41f938521389d090800000000000000
+      internalID: -8009226347488874165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_88
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95fdf2d5aece24b60800000000000000
+      internalID: 7729000401851113305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_89
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 16
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0edee0d2cd7ae60800000000000000
+      internalID: 7973583751364862194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_90
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 16
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc75216b77a6d0640800000000000000
+      internalID: 5047807819740501964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_91
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 16
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d876a836e6dbd2450800000000000000
+      internalID: 6065712554951993229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_92
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b09245675d42e400800000000000000
+      internalID: 351928758644674743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_93
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 16
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eddc329df187891a0800000000000000
+      internalID: -6802555158960812578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_94
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 16
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e61888a799a6f14f0800000000000000
+      internalID: -855848196758797970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_95
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 16
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25494a4621005bc40800000000000000
+      internalID: 5527324196665070674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d54b79e36e97a0f50800000000000000
+      internalID: 6848420213169828957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_97
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 12
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 362fce1e577049ef0800000000000000
+      internalID: -102448688639708573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_98
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 12
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 321871be0a0b43560800000000000000
+      internalID: 7292647901805117731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_99
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 12
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f219474fc6dc005f0800000000000000
+      internalID: -792407666575765201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_100
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 12
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9814eabb10d1c74e0800000000000000
+      internalID: -1982677842668928631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_101
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 12
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3fb61628f5c0fc0800000000000000
+      internalID: -3527339394553089090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_102
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 12
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a30fa7a25d720400800000000000000
+      internalID: 288931120059188130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_103
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 12
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276bac154f7093000800000000000000
+      internalID: 16052819598161522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_104
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 12
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26ee0e38c715cca90800000000000000
+      internalID: -7292364101389324702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_105
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 12
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25901281ffebcd2d0800000000000000
+      internalID: -3252514828037584558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_106
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 12
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dffdd5a003db0b80800000000000000
+      internalID: -8427410277957500974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_107
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 12
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afab73a0220a69040800000000000000
+      internalID: 4654083332994743034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9956d98986f30c0800000000000000
+      internalID: -4593838090209617432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_109
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 8
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75185953b9b7a8810800000000000000
+      internalID: 1768361710245478743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_110
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 8
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e970ba240a9035d0800000000000000
+      internalID: -3084796402062034456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_111
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 8
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a87750c3bebe8c0800000000000000
+      internalID: -3968820003574674883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_112
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 8
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 761cb222050ddf200800000000000000
+      internalID: 215557399772905831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_113
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 8
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908aa276eb3de7520800000000000000
+      internalID: 2701829641196972041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_114
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 8
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933ec3c215e9bb8f0800000000000000
+      internalID: -523650860186803399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_115
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 8
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 879d29b3cb326ac20800000000000000
+      internalID: 3217298275163101560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_116
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 8
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a51b7825bbc5e80800000000000000
+      internalID: -8188464059328144800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_117
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 8
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe04ff9eaae0a42b0800000000000000
+      internalID: -5599647059448741649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_118
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 8
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8679ed7cd2d5949b0800000000000000
+      internalID: -5095439052184840344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_119
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 8
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8f0fa9d300e2830800000000000000
+      internalID: 4048173379645143282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_120
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527fa41309d7cb6c0800000000000000
+      internalID: -4126285100322457819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_121
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 4
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05fab5d111772a40800000000000000
+      internalID: 5343363804312565007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_122
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 4
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5f3114291713c40800000000000000
+      internalID: 5490294293712336353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_123
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 4
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83671ad79f56b5490800000000000000
+      internalID: -7756493810986551752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_124
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 4
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104ac6a9fd0cd71a0800000000000000
+      internalID: -6810074994913270783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_125
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 4
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e382b799fca1b3250800000000000000
+      internalID: 5925359213671557182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_126
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 4
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786cd17ee174654d0800000000000000
+      internalID: -3146249091619633529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_127
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 4
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6688f820cac64a0800000000000000
+      internalID: -6598710227006626117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_128
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 4
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d398425bcd5338750800000000000000
+      internalID: 6305943125296974141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_129
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 4
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5bfd43db169f5c0800000000000000
+      internalID: -4181203313773005343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_130
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 4
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caabc0490d65fea60800000000000000
+      internalID: 7705472941291256492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_131
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d54d468d7dbad7f80800000000000000
+      internalID: -8107134810660219811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_132
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d2c0d8fc8f31070800000000000000
+      internalID: 8076072127113735483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_133
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eed618dfa20db800800000000000000
+      internalID: 629662477169647332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_134
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 0
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a990edf344ca07250800000000000000
+      internalID: 5940437317630953882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_135
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57fb58e8afe7551e0800000000000000
+      internalID: -2209720427557306507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_136
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead0ec11a3ee15440800000000000000
+      internalID: 4922977800866893230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_137
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ca0e714b620a6a0800000000000000
+      internalID: -6440104912203240397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_138
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 0
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2c74e2d840a4530800000000000000
+      internalID: 3839886636700123862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_139
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b00b90be5705809c0800000000000000
+      internalID: -3960827404887674869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_140
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77070a68b129f9290800000000000000
+      internalID: -7881420175954644873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_141
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f65532f684669b0800000000000000
+      internalID: -5087299086897025232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocks_spikes_quarter_142
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 0
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d836f3e6d834eaf00800000000000000
+      internalID: 1129914831235670925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
