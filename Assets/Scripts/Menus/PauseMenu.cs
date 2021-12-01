@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour
     void Start()
     {
         Time.timeScale = 0;
+        AudioManager.Pause();
     }
 
     // Update is called once per frame
@@ -16,6 +17,7 @@ public class PauseMenu : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Time.timeScale = 1;
+            AudioManager.UnPause();
             Destroy(gameObject);
         }
     }

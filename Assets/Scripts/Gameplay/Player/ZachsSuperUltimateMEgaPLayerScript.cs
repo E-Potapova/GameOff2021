@@ -84,6 +84,8 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     // particle fx support
     public GameObject dirtEffect;
     public GameObject dirtOnLandingEffect;
+    public GameObject dashEffect;
+    public GameObject dbjEffect;
     private float spawnDirtElapsed;
     private bool spawnedDirtOnLanding = true;
     #endregion
@@ -282,6 +284,10 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
             onGround = false;
             dashTimer = Time.unscaledTime;
             playerrigidbody.velocity = new Vector2(playerrigidbody.velocity.x, 0);
+            animator.SetTrigger("dash");
+            Instantiate(dashEffect,
+                    (transform.position + new Vector3(playerCollider.size.x / 2 * direction, 0, 0)),
+                    Quaternion.identity);
             AudioManager.Play(AudioClipName.Dash);
         }
 
@@ -333,6 +339,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
             jumpReset = false;
             // visual support
             animator.SetTrigger("doubleJump");
+            Instantiate(dbjEffect, (transform.position + new Vector3(0, -(playerCollider.size.y) / 2, 0)), Quaternion.identity);
         }
         #endregion
     }
@@ -349,7 +356,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("UnlockWallJump"))
         {
-            print("Acquired Wall Jump");
+            //print("Acquired Wall Jump");
             unlockedWallJump = true;
             unlockAbilityEvent.Invoke(0);
             AudioManager.Play(AudioClipName.UnlockAbility);
@@ -360,7 +367,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("UnlockDash"))
         {
-            print("Acquired Dash");
+            //print("Acquired Dash");
             unlockedDash = true;
             unlockAbilityEvent.Invoke(1);
             AudioManager.Play(AudioClipName.UnlockAbility);
@@ -369,7 +376,7 @@ public class ZachsSuperUltimateMEgaPLayerScript : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("UnlockDoubleJump"))
         {
-            print("Acquired DoubleJump");
+            //print("Acquired DoubleJump");
             unlockedDoubleJump = true;
             unlockAbilityEvent.Invoke(2);
             AudioManager.Play(AudioClipName.UnlockAbility);

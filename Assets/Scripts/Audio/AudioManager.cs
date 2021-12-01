@@ -51,4 +51,14 @@ public static class AudioManager
         // in other scripts: AudioManager.Play(AudioClipName.#name#);
         audioSource.PlayOneShot(audioClips[name], audioClipVolumes[name]);
     }
+
+    public static void Pause()
+    {
+        audioSource.Pause();
+    }
+
+    public static void UnPause()
+    {
+        audioSource.UnPause();
+    }
 }
